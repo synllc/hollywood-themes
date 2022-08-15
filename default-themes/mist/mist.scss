@@ -1,0 +1,169 @@
+/*
+	HOLLYWOOD CODE EDITOR — Advanced open-source interface for execution platforms
+    Copyright (C) 2018-2021 Synapse Softworks LLC
+
+    This file and program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This file and program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/* ==== Color Palette ==== */
+
+$color-primary: #005fb7;
+$color-success: #0f7b0f;
+$color-warning: #f19100;
+$color-danger: #c42b1c;
+$color-info: #8a8a8a;
+$color-primary-light: adjust-color($color-primary, $lightness: 15%);
+
+/* ==== Global Colors ==== */
+
+$ui-tx-color: #182130;	/* Default text color */
+$ui-bg-color: #cbccd2;		/* Default background color */
+$ui-link-color: $ui-tx-color;
+
+/* ==== Control Palette ==== */
+
+$ux-textbox-bg: #d4d5d9;
+$ux-textbox-label: $ui-tx-color;
+$ux-textbox-text: $ui-tx-color;
+$ux-textbox-icon: $ui-tx-color;
+
+$ux-button-bg: adjust-color($ui-bg-color, $lightness: 5%);
+$ux-button-bg-h: adjust-color($ui-bg-color, $lightness: 10%);
+$ux-button-bg-p: adjust-color($ui-bg-color, $lightness: -5%);
+$ux-button-label: $ui-tx-color;
+
+$ux-checkbox-bg: adjust-color($ui-bg-color, $lightness: -2%);
+$ux-checkbox-icon: transparent;
+$ux-checkbox-border: 1px solid #8a8a8a;
+$ux-checkbox-checked-bg: #6063ff;
+$ux-checkbox-checked-icon: $ux-checkbox-bg;
+$ux-checkbox-label: $ux-button-label;
+
+$ux-dropdown-bg: $ux-textbox-bg;
+$ux-dropdown-text: $ux-textbox-label;
+$ux-dropdown-shadow: 0px 1px 5px rgba(0,0,0,30%);
+
+$ux-context-bg: adjust-color($ui-bg-color, $alpha: -0.5);
+$ux-context-text: $ui-tx-color;
+$ux-context-shadow: 0px 1px 5px rgba(0,0,0,30%);
+
+$ux-pagelist-button-bg: #2b2b2b;
+$ux-pagelist-button-hover-bg: #323232;
+$ux-pagelist-button-press-bg: #1d1d1d;
+$ux-pagelist-button-text: white;
+$ux-pagelist-details-text: white;
+
+/* ==== Error Wrapper ==== */
+
+$ui-errw-text: white;
+$ui-errw-bg: rgba(0,0,0,.5);
+$ui-errw-icon: yellow;
+
+/* ==== Title Bar Palette ==== */
+
+$ui-ban-bg: $ui-bg-color;	/* Title bar bg color */
+$ui-ban-ver: gray; /* Title bar version label color */
+$ui-ban-sup: darkgray; /* Title bar superscript label color */
+
+$ui-ban-ctl-icon: black; /* Title bar control icon color */
+$ui-ban-ctl-bg-hover: rgba(0,0,0,.5); /* Title bar control icon background on hover */
+$ui-ban-ctl-bg-press: rgba(0,0,0,.7); /* Ditto, on press */
+$ui-ban-ctl-cbg-hover: #ff564e; /* Title bar close icon background on hover */
+$ui-ban-ctl-cbg-press: #a33732; /* Ditto, on hover */
+
+/* ==== Navigation Bar Palette ==== */
+
+$ui-nav-bg: $ui-ban-bg; /* Nav bar bg color */
+$ui-nav-icon: $ui-tx-color; /* Nav icon color */
+$ui-nav-bg-ctl: rgb(86, 86, 86);	/* Title bar control color */
+$ui-nav-bg-sel: rgb(60, 60, 60);	/* Title select icon select/hover color */
+$ui-nav-ico-sel: $ui-tx-color;	/* Title icon select/hover color */
+$ui-nav-ico-rst: rgb(150, 150, 150);	/* Title icon unselect color */
+$ui-nav-lbl-bg: rgba(0, 0, 0, 30%);
+$ui-nav-lbl-txt: white;
+$ui-nav-lbl-shadow: 0px 1px 5px rgba(0,0,0,30%); /* Icon label bg shadow */
+
+/* ==== Login ==== */
+
+$ui-login-ctl-bg: rgba(0,0,0,.5); 
+$ui-login-corner-icon-color: $ui-tx-color;
+
+/* ==== Changelog UX ==== */
+
+$ui-changelog-title-text: $ui-tx-color;
+$ui-changelog-content-text: lightgray;
+
+/* ==== Page UX ==== */
+
+$ux-box-txt: white;
+$ux-box-bg: $ux-textbox-bg;
+$ux-box-border: none;
+$ux-box-shadow: 0px 1px 5px rgba(0,0,0,30%);
+
+/* ==== Editor UX ==== */
+
+$ux-editor-tab-bg: transparent;
+$ux-editor-stab-bg: adjust-color($ui-bg-color, $lightness: 2%);
+$ux-editor-border-bg: adjust-color($ui-bg-color, $lightness: -5%);
+$ux-editor-file-category: adjust-color($ui-bg-color, $lightness: 5%);
+$ux-editor-file-category-text: $ui-tx-color;
+$ux-editor-file-active-color: lightgray;
+$ux-editor-imgbutton-color: lightgray;
+$ux-editor-imgbutton-hover-color: white;
+
+/* ==== Package Manager UX ==== */
+
+$ux-package-title: white;
+$ux-package-button-text: white;
+$ux-package-button-install: darkslateblue;
+$ux-package-button-run: green;
+$ux-package-button-update: gold;
+$ux-package-banner-bg: #ffffff0f;
+$ux-package-description-txt: white;
+$ux-package-entry-bg: rgba(255, 255, 255, 15%);
+
+/* ==== Bolt Manager UX ==== */
+
+$ux-boltm-list-bg: rgb(17, 16, 16);
+$ux-boltm-border: rgb(36, 36, 36);
+
+/* ==== Update Dialog ==== */
+
+$ux-update-text: $ui-tx-color;
+$ux-update-progress-text: $ui-tx-color;
+
+/* ==== Dialogs ==== */
+
+$ux-dialog: $ui-ban-bg;
+$ux-dialog-text: $ui-tx-color;
+$ux-dialog-title: adjust-color($ux-dialog, $lightness: 5%);
+$ux-dialog-actions: adjust-color($ux-dialog, $lightness: -5%);
+
+/* ==== Settings ==== */
+
+$ux-uisettings-bar: adjust-color($ui-bg-color, $lightness: -5%);
+$ux-uisettings-entry-text: $ui-tx-color;
+$ux-uisettings-entry-text-hover: adjust-color($ui-tx-color, $lightness: 5%);
+$ux-uisettings-entry-text-select: black;
+$ux-uisettings-entry-bg-select: #486a9c;
+
+//@STITCH
+
+#ban_middle_classic {
+    color: black !important;
+}
+
+.ux_button {
+    border: 1px solid $ui-bg-color;
+}

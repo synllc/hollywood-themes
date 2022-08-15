@@ -1,0 +1,12 @@
+{
+    "folder": "vscode-icons:default-folder",
+    "file": "vscode-icons:default-file",
+    "file-script": "vscode-icons:file-type-lua",
+    "file-text": "vscode-icons:file-type-text",
+
+    "btn-execute": "ic:baseline-play-circle",
+    "btn-clear": "ic:baseline-clear",
+    "btn-file-open": "ic:baseline-upload-file",
+    "btn-file-execute": "ic:baseline-settings",
+    "btn-file-save": "ic:baseline-save"
+}

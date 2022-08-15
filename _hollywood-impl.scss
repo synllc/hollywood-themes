@@ -1,0 +1,847 @@
+/*
+    HOLLYWOOD CODE EDITOR — Advanced open-source interface for execution platforms
+    Source code available at https://github.com/synllc/hw
+    Copyright (C) 2018-2022 Synapse Softworks LLC
+
+    This file and program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This file and program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+$color-primary: #005fb7 !default;
+$color-success: #0f7b0f !default;
+$color-warning: #f19100 !default;
+$color-danger: #c42b1c !default;
+$color-info: #8a8a8a !default;
+$color-primary-light: adjust-color($color-primary, $lightness: 15%) !default;
+$ui-tx-color: rgb(200, 200, 200) !default;
+$ui-bg-color: #202020 !default;
+$ui-link-color: $ui-tx-color !default;
+$ux-textbox-bg: #2d2d2d !default;
+$ux-textbox-label: $ui-tx-color !default;
+$ux-textbox-text: $ui-tx-color !default;
+$ux-textbox-icon: $ui-tx-color !default;
+$ux-button-bg: #373737 !default;
+$ux-button-bg-h: #3c3c3c !default;
+$ux-button-bg-p: #2f2f2f !default;
+$ux-button-label: $ui-tx-color !default;
+$ux-button-padding-v: 0.2em !default;
+$ux-button-padding-h: 0.5em !default;
+$ux-button-radius: 4px !default;
+$ux-checkbox-bg: #1d1d1d !default;
+$ux-checkbox-icon: transparent !default;
+$ux-checkbox-border: 1px solid #9a9a9a !default;
+$ux-checkbox-checked-bg: #60cdff !default;
+$ux-checkbox-checked-icon: $ux-checkbox-bg !default;
+$ux-checkbox-label: $ux-button-label !default;
+$ux-dropdown-bg: adjust-color($ux-textbox-bg, $alpha: -0.5) !default;
+$ux-dropdown-text: $ux-textbox-label !default;
+$ux-dropdown-shadow: 0px 1px 5px rgba(0,0,0,30%) !default;
+$ux-dropdown-highlight-bg: skyblue !default;
+$ux-context-bg: adjust-color($ui-bg-color, $alpha: -0.5) !default;
+$ux-context-text: $ui-tx-color !default;
+$ux-context-shadow: 0px 1px 5px rgba(0,0,0,30%) !default;
+$ux-pagelist-button-bg: #2b2b2b !default;
+$ux-pagelist-button-hover-bg: #323232 !default;
+$ux-pagelist-button-press-bg: #1d1d1d !default;
+$ux-pagelist-button-text: white !default;
+$ux-pagelist-details-text: white !default;
+$ui-errw-text: white !default;
+$ui-errw-bg: rgba(0,0,0,.5) !default;
+$ui-errw-icon: yellow !default;
+$ui-ban-bg: #202020 !default;
+$ui-ban-ver: white !default;
+$ui-ban-sup: gray !default;
+$ui-ban-ctl-icon: white !default;
+$ui-ban-ctl-bg-hover: rgba(0,0,0,.5) !default;
+$ui-ban-ctl-bg-press: rgba(0,0,0,.7) !default;
+$ui-ban-ctl-cbg-hover: rgb(212, 19, 36) !default;
+$ui-ban-ctl-cbg-press: rgb(153, 15, 26) !default;
+$ui-nav-bg: rgb(36, 36, 36) !default;
+$ui-nav-icon: $ui-tx-color !default;
+$ui-nav-bg-ctl: rgb(86, 86, 86) !default;
+$ui-nav-bg-sel: transparent !default;
+$ui-nav-ico-sel: $ui-tx-color !default;
+$ui-nav-ico-rst: rgb(150, 150, 150) !default;
+$ui-nav-lbl-bg: rgba(0, 0, 0, 100%) !default;
+$ui-nav-lbl-txt: white !default;
+$ui-nav-lbl-shadow: 0px 1px 5px rgba(0,0,0,30%) !default;
+$ui-login-ctl-bg: rgba(0,0,0,.5) !default;
+$ui-login-corner-icon-color: $ui-tx-color !default;
+$ui-changelog-title-text: $ui-tx-color !default;
+$ui-changelog-content-text: lightgray !default;
+$ux-box-txt: white !default;
+$ux-box-bg: $ux-textbox-bg !default;
+$ux-box-border: none !default;
+$ux-box-shadow: 0px 1px 5px rgba(0,0,0,30%) !default;
+$ux-editor-tab-bg: transparent !default;
+$ux-editor-stab-bg: #2d2d2d !default;
+$ux-editor-border-bg: rgb(56, 56, 56) !default;
+$ux-editor-file-category: rgb(36, 36, 36) !default;
+$ux-editor-file-category-text: white !default;
+$ux-editor-file-active-color: lightgray !default;
+$ux-editor-imgbutton-color: lightgray !default;
+$ux-editor-imgbutton-hover-color: white !default;
+$ux-package-title: white !default;
+$ux-package-button-text: white !default;
+$ux-package-button-install: darkslateblue !default;
+$ux-package-button-run: green !default;
+$ux-package-button-update: gold !default;
+$ux-package-banner-bg: rgba(255, 255, 255, 6%) !default;
+$ux-package-description-txt: white !default;
+$ux-package-entry-bg: rgba(255, 255, 255, 15%) !default;
+$ux-update-text: white !default;
+$ux-update-progress-text: white !default;
+$ux-dialog: $ui-ban-bg !default;
+$ux-dialog-text: white !default;
+$ux-dialog-title: adjust-color($ux-dialog, $lightness: 5%) !default;
+$ux-dialog-actions: adjust-color($ux-dialog, $lightness: -5%) !default;
+$ux-uisettings-bar: #191919 !default;
+$ux-uisettings-entry-text: rgba(255, 255, 255, 50%) !default;
+$ux-uisettings-entry-text-hover: rgb(255, 255, 255) !default;
+$ux-uisettings-entry-text-select: black !default;
+$ux-uisettings-entry-bg-select: skyblue !default;
+
+#error_wrapper {
+	color: $ui-errw-text;
+	background-color: $ui-errw-bg;
+}
+
+#announcement_title .iconify {
+	color: $ui-errw-icon;
+}
+
+#notification_wrapper {
+	color: white;
+}
+
+.ux_textbox_label {
+	color: $ux-textbox-label;
+
+	.description {
+		color: gray;
+	}
+}
+
+.ux_textbox_container {
+	background-color: $ux-textbox-bg;
+	input {
+		color: $ux-textbox-text;
+	}
+}
+
+.ux_textbox_container_icon {
+	.iconify {
+		color: $ux-textbox-icon;
+	}
+}
+
+.ux_button {
+	color: $ux-button-label;
+	background-color: $ux-button-bg;
+	box-shadow: $ux-box-shadow;
+
+	border: 1px solid;
+	border-top-color: #3f3f3f;
+	border-left-color: #3a3a3a;
+	border-right-color: #3a3a3a;
+	border-bottom-color: #393a3d;
+
+	border-radius: $ux-button-radius;
+	padding: $ux-button-padding-v $ux-button-padding-h $ux-button-padding-v $ux-button-padding-h;
+
+	&:hover {
+		background-color: $ux-button-bg-h;
+	}
+
+	&:active {
+		color: adjust-color($ux-button-label, $alpha: -0.5%);
+		background-color: $ux-button-bg-p;
+	}
+
+	&.disabled {
+		color: adjust-color($ux-button-label, $alpha: -0.5%);
+		background-color: $ux-button-bg-p;
+
+		&:hover {
+		}
+	
+		&:active {
+		}
+	}
+}
+
+.ux_checkbox {
+	.iconify {
+		color: $ux-checkbox-icon;
+	}
+
+	.description {
+		color: gray;
+	}
+
+	&.checked {
+		.ux_checkbox_check {
+			background-color: $ux-checkbox-checked-bg;
+		}
+
+		.iconify {
+			color: $ux-checkbox-checked-icon;
+		}
+	}
+}
+
+.ux_checkbox_check {
+	border: $ux-checkbox-border;
+	background-color: $ux-checkbox-bg;
+}
+
+.ux_checkbox_label {
+	color: $ux-checkbox-label;
+}
+
+.ux_slider_label, .ux_slider_preview {
+	color: $ux-textbox-label;
+
+	.description {
+		color: gray;
+	}
+}
+
+.ux_slider_control {
+	&::-webkit-slider-thumb {
+		background: $ui-tx-color;
+	}
+}
+
+.ux_dropdown_control {
+	.selector {
+		color: $ux-dropdown-text;
+		background-color: $ux-dropdown-bg;
+		box-shadow: $ux-dropdown-shadow;
+	}
+
+	.list {
+		background-color: $ux-dropdown-bg;
+		box-shadow: $ux-dropdown-shadow;
+
+		.highlight {
+			background-color: $ux-dropdown-highlight-bg;
+			color: black;
+		}
+	}
+}
+
+.ux_dropdown_label {
+	color: $ux-textbox-label;
+
+	.description {
+		color: gray;
+	}
+}
+
+.tree {
+	.node {
+		.contents {
+			opacity: 60%;
+			transition: 0.3s opacity;
+
+			&:hover {
+				opacity: 100%;
+				background-color: rgba(255, 255, 255, 20%);
+			}
+
+			&:active {
+				transition: none;
+				opacity: 60%;
+			}
+		}
+	}
+}
+
+.ux_context {
+	background-color: $ux-context-bg;
+	color: $ux-context-text;
+	box-shadow: $ux-context-shadow;
+	
+	.entry:hover {
+		opacity: 100%;
+	}
+}
+
+#ban_bar {
+	background-color: $ui-ban-bg;
+}
+
+#ban_desc {
+	color: $ui-ban-ver;
+
+	#super {
+		color: $ui-ban-sup;
+	}
+}
+
+#ban_controls {
+	color: $ui-ban-ctl-icon;
+}
+
+.ban_control {
+	&:hover {
+		background-color: $ui-ban-ctl-bg-hover;
+	}
+
+	&:active {
+		background-color: $ui-ban-ctl-bg-press;
+	}
+}
+
+#ban_control_close {
+	&:hover {
+		background-color: $ui-ban-ctl-cbg-hover;
+	}
+
+	&:active {
+		background-color: $ui-ban-ctl-cbg-press;
+	}
+}
+
+#language_wrapper {
+	#bar {
+		background-color: $ui-bg-color;
+	}
+}
+
+#nav_bar {
+	background-color: transparent;
+
+	&.vertical {
+		background-color: $ui-nav-bg;
+
+		.nav_entry {
+			background-color: transparent;
+			&:hover { 
+				.iconify {
+					color: $ui-nav-ico-sel;
+				}
+			}
+
+			&.selected {
+				background-color: $ui-nav-bg-sel;
+			}
+		}
+	}
+}
+
+.nav_entry {
+	background-color: transparent;
+
+	.iconify {
+		color: $ui-nav-ico-rst;
+	}
+
+	.caption {
+		color: $ui-nav-ico-rst;
+	}
+
+	.label {
+		color: $ui-nav-lbl-txt;
+		background-color: $ui-nav-lbl-bg;
+		box-shadow: $ui-nav-lbl-shadow;
+	}
+
+	.selectbar {
+		background-color: $ui-nav-ico-rst;
+	}
+
+	&:hover {
+		.iconify {
+			color: $ui-nav-ico-sel;
+		}
+
+		.caption {
+			color: $ui-nav-ico-sel;
+		}
+	}
+
+	&.selected {
+		background-color: transparent;
+
+		.iconify {
+			color: $ui-nav-ico-sel;
+		}
+		
+		.caption {
+			color: $ui-nav-ico-sel;
+		}
+	}
+}
+
+.page_container {
+	color: $ui-tx-color;
+}
+
+.page_ux_box {
+	color: $ux-box-txt;
+	background: $ux-box-bg;
+	border: $ux-box-border;
+	box-shadow: $ux-box-shadow;
+}
+
+#ux_interface_add_tab {
+	&:hover {
+		background-color: $ux-editor-stab-bg;
+	}
+}
+
+.ux_interface_tab {
+	background-color: $ux-editor-tab-bg;
+
+	&:hover {
+		background-color: adjust-color($ux-editor-stab-bg, $lightness: -10%);
+	}
+
+	&.selected {
+		background-color: $ux-editor-stab-bg;
+	}
+}
+
+.editor-view {
+	border-right-color: $ux-editor-border-bg;
+	.main-container {
+		.editor {
+			border-top-color: $ux-editor-border-bg;
+			border-left-color: $ux-editor-border-bg;
+		}
+		border-bottom-color: $ux-editor-border-bg;
+	}
+
+	.information-view {
+		border-bottom-color: $ux-editor-border-bg;
+	}
+}
+
+.editor-sidebar-category, .tree {
+	.category-caption, .module-caption {
+		background-color: $ux-editor-file-category;
+	}
+
+	.entry {
+		opacity: 60%;
+		transition: 0.3s opacity;
+
+		&:hover {
+			opacity: 100%;
+			background-color: rgba(255, 255, 255, 20%);
+		}
+
+		&:active {
+			transition: none;
+			opacity: 60%;
+		}
+
+		.caption {
+			background-color: transparent;
+		}
+	}
+}
+
+.ux_interface_action_imgbutton {
+	color: $ux-editor-imgbutton-color;
+
+	&:hover {
+		color: $ux-editor-imgbutton-hover-color;
+	}
+}
+
+#console_actions {
+	background-color: $ui-nav-bg;
+}
+
+#console_output {
+	background-color: adjust-color($ui-nav-bg, $lightness: -5%);
+}
+
+#captcha_screen {
+	background-color: transparent;
+}
+
+#login_buttons .ux_button {
+	background-color: $ui-login-ctl-bg;
+}
+
+#username_box .ux_textbox_container, #password_box .ux_textbox_container, #r_email_box .ux_textbox_container, #r_license_box .ux_textbox_container, #passwordconfirm_box .ux_textbox_container, #r_license_codon0, #r_license_codon1, #r_license_codon2, #r_license_codon3, #r_license_codon4 {
+	background-color: $ui-login-ctl-bg;
+}
+
+.login_corner_entry {
+	color: $ui-login-corner-icon-color;
+}
+
+.ux_update_box {
+	background-color: $ui-ban-bg;
+}
+
+.ux_account_login_log {
+	background-color: $ui-ban-bg;
+}
+
+#oobe_container {
+	color: $ui-tx-color;
+	background-color: $ui-bg-color;
+}
+
+// usage of mixins requires this to be in the impl
+#changelog {
+	margin-left: 10px;
+	margin-top: 10px;
+	.entry {
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-left-color: gray;
+		padding-bottom: 20px;
+
+		.title {
+			@mixin dotentry($dotcolor) {
+				color: $ui-tx-color;
+				font-weight: bold;
+
+				&::before {
+					display: inline-block;
+					content: '';
+					background-color: $dotcolor;
+					//border-radius: 50%;
+					width: 0.5em;
+					height: 0.5em;
+					transform: translateX(-54%);
+				}
+			}
+
+			@mixin badgeentry($text, $color) {
+				&::after {
+					display: inline-block;
+					content: to-upper-case($text);
+					margin-left: 0.5em;
+					font-size: 0.6em;
+					color: $ui-tx-color;
+					background-color: $color;
+					padding: 0.4em;
+				}
+			}
+
+			display: flex;
+			align-items: center;
+			color: $ui-tx-color;
+			font-size: 1.5em;
+			transform: translateY(-50%);
+			line-height: 0.7;
+
+			&.current {
+				@include dotentry($color-success);
+				@include badgeentry('current', $color-success);
+			}
+
+			&.previous {
+				@include dotentry($color-warning);
+			}
+
+			&.upcoming {
+				@include dotentry(gray);
+				@include badgeentry('upcoming', gray);
+				color: gray;
+			}
+		}
+
+		.content {
+			color: $ui-changelog-content-text;
+			padding-left: 10px;
+			margin: 0;
+
+			.change {
+				display: flex;
+				align-items: center;
+
+				@mixin chgentry($dotcolor, $symbol) {
+					&::before {
+						font-family: monospace;
+						display: flex;
+						content: $symbol;
+						border-color: $dotcolor;
+						border-style: solid;
+						border-width: 1px;
+						color: $dotcolor;
+						width: 1em;
+						height: 1em;
+						margin-right: 5px;
+						align-items: center;
+						justify-content: center
+					}
+				}
+
+				&.addition {
+					@include chgentry($color-success, '+');
+				}
+
+				&.subtraction {
+					@include chgentry($color-warning, '-');
+				}
+
+				&.fix {
+					@include chgentry($color-info, '~');
+				}
+			}
+		}
+	}
+}
+
+a {
+	color: $ui-link-color;
+}
+
+#syn_app {
+	background-color: $ui-bg-color;
+}
+
+.notification {
+	&.info { background-color: $color-primary; }
+	&.success { background-color: $color-success; }
+	&.warning { background-color: $color-warning; color: #222324; }
+	&.danger { background-color: $color-danger; }
+}
+
+#update_wrapper {
+	color: $ux-update-text;
+
+	.progress-view {
+		background-color: $ui-bg-color;
+		box-shadow: 0 0 15px adjust-color(black, $lightness: -30%, $alpha: -0.3);
+
+		.caption {
+			background-color: adjust-color($ui-bg-color, $lightness: -5%);
+		}
+
+		.tasks {
+			background-color: adjust-color($ui-bg-color, $alpha: -0.5);
+			backdrop-filter: blur(4px);
+		}
+
+		#update_text {
+			color: $ux-update-text;
+		}
+
+		#update_progress {
+			color: $ux-update-progress-text;
+			background-color: $color-success;
+
+			&.has_error {
+				color: black;
+				background-color: $color-danger;
+			}
+		}
+	}
+}
+
+#update_changelog_wrapper {
+	#update_changelog_box {
+		background-color: $ui-ban-bg;
+		color: $ui-tx-color;
+
+		.title {
+			background-color: $ui-nav-bg;
+		}
+	}
+}
+
+#package-screen {
+	#package-banner {
+		background-color: $ux-package-banner-bg;
+
+		#package-title {
+			color: $ux-package-title;
+		}
+
+		#package-controls {
+			#package-btn {
+				color: $ux-package-button-text;
+
+				&.available {
+					background-color: $ux-package-button-install;
+				}
+
+				&.installed {
+					background-color: $ux-package-button-run;
+				}
+
+				&.outdated {
+					background-color: $ux-package-button-update;
+				}
+
+				&.downloading {
+					background-color: transparent;
+					border: 1px solid white;
+					opacity: 50%;
+					cursor: not-allowed;
+				}
+
+				&:active {
+					opacity: 50%;
+				}
+			}
+		}
+	}
+}
+
+#package-description {
+	color: $ux-package-description-txt;
+}
+
+#package-list {
+	.package-entry {
+		background-color: $ux-package-entry-bg;
+	}
+}
+
+#theme-options {
+	.option {
+		background-color: $ux-button-bg;
+	}
+}
+
+.page-list {
+	color: $ui-tx-color;
+	.entry-button, .entry-list-header {
+		background-color: $ux-pagelist-button-bg;
+		color: $ux-pagelist-button-text;
+
+		.details {
+			color: $ux-pagelist-details-text;
+			.title { color: $ux-pagelist-button-text; }
+			.description { color: lightgray; }
+			.arrow { color: $ux-pagelist-button-text; }
+		}
+
+		&:hover {
+			background-color: $ux-pagelist-button-hover-bg;
+		}
+
+		&:active {
+			background-color: $ux-pagelist-button-press-bg;
+		}
+	}
+
+	.entry-list {
+		.entry {
+			background-color: $ux-pagelist-button-bg;
+			color: $ux-pagelist-button-text;
+		}
+	}
+}
+
+#ux_modules {
+	.module-entry {
+		color: $ux-box-txt;
+		background: $ux-box-bg;
+		border: $ux-box-border;
+		box-shadow: $ux-box-shadow;
+
+		.module-title {
+			color: white;
+			.module-id {
+				color: gray;
+			}
+		}
+	}
+}
+
+.remote-body {
+	color: $ui-tx-color;
+	background-color: $ui-bg-color;
+
+	.remote-header {
+		background-color: $ui-ban-ctl-bg-hover;
+	}
+}
+
+.ux_dialog {
+	background-color: $ux-dialog;
+	color: $ux-dialog-text;
+
+	.title {
+		//background-color: $ux-dialog-title;
+	}
+
+	.actions {
+		background-color: $ux-dialog-actions;
+	}
+}
+
+.package-bar {
+	background-color: $ux-uisettings-bar;
+}
+
+.ux-uisettings-list {
+	background-color: $ux-uisettings-bar;
+	
+	.entry-label {
+		background-color: $ux-textbox-bg;
+	}
+
+	.entry {
+		color: $ux-uisettings-entry-text;
+		position: relative;
+
+		&::after {
+			position: absolute;
+			display: block;
+			transition: 0.3s height, 0.3s top;
+			
+			left: 0%;
+			top: 50%;
+			height: 0%;
+			width: 4px;
+			border-radius: 4px;
+
+			background-color: $ux-uisettings-entry-bg-select;
+			content: '';
+		}
+
+		&:hover {
+			background-color: rgba(255,255,255,5%);
+		}
+
+		&.select {
+			background-color: rgba(255,255,255,5%);
+
+			.iconify {
+				color: $ux-uisettings-entry-bg-select;
+			}
+
+			&::after {
+				height: 50%;
+				top: 25%;
+			}
+		}
+	}
+}
+
+.ux-uisettings-pages {
+	.category-label {
+		background-color: $ux-textbox-bg;
+	}
+}
+
+input[type=range] {
+	-webkit-appearance: none;
+
+	&::-webkit-slider-thumb {
+		background: $ux-checkbox-checked-bg;
+	}
+}
