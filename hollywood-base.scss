@@ -2053,22 +2053,21 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 	100% { opacity: 100%; transform: translateY(0%); }
 }
 
-#toolbar-container {
+.toolbar {
 	display: flex;
-	flex-direction: column;
-	padding-left: 5px;
+	gap: 2px;
+	margin-left: 2px;
 
-	.toolbar {
-		display: flex;
-		gap: 5px;
+	.entry {
+		cursor: pointer;
+		padding: 2px;
 
-		.button {
-			cursor: pointer;
-			padding: 2px;
+		.iconify {
+			font-size: 1.2em;
+		}
 
-			.iconify {
-				font-size: 1.2em;
-			}
+		&:active {
+			opacity: 50%;
 		}
 	}
 }
