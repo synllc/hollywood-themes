@@ -164,3 +164,7 @@ $ux-uisettings-entry-bg-select: #aea4f6;
 .ux_button {
     border: 1px solid $ux-textbox-bg !important;
 }
+
+#nav_bar.vertical .nav_entry.selected {
+    background-color: adjust-color($ui-bg-color, $lightness: 5%);
+}
