@@ -162,7 +162,8 @@ $ux-uisettings-entry-bg-select: skyblue;
 
 @font-face {
     font-family: hazyTrip;
-    src: url('./style/default-themes/hazy-trip/W95FA.otf');
+    //src: url('./style/default-themes/hazy-trip/W95FA.otf');
+    src: asset('W95FA.otf');
 }
 
 .ux_slider_label {

@@ -3647,6 +3647,10 @@ $v3rm-font: 'Open Sans';
   border-radius: 15px;
 }
 
+*::-webkit-scrollbar-corner { 
+	background: transparent; 
+}
+
 *:focus {
     outline: none;
 }
