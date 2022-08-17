@@ -196,3 +196,7 @@ $ux-uisettings-entry-bg-select: #2c7192;
         background-color: transparent;
     }
 }
+
+#nav_bar.vertical .nav_entry.selected {
+    background-color: adjust-color($ui-bg-color, $lightness: 5%);
+}
