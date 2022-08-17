@@ -1,6 +1,6 @@
 {
   "inherit": true,
-  "base": "vs-dark",
+  "base": "vs",
   "colors": {
     "foreground": "#4c505e",
     "descriptionForeground": "#7b7f8c",
