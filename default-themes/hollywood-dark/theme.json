@@ -4,6 +4,24 @@
     "stylesheet": true,
     "editor": "synapse-dark",
 
+    "syntaxHighlight": {
+        "comment": { "color" : "58624d" },
+        "keyword": { "color" : "94ff71" },
+        "operator": { "color" : "f7d979" },
+        "namespace": { "color" : "66d4cf" },
+        "type": { "color" : "66d4cf" },
+        "typeParameter": { "color" : "6ac4dc" },
+        "interface": { "color" : "66d4cf" },
+        "function": { "color" : "7bffa0" },
+        "member": { "color" : "a9dc98" },
+        "variable": { "color" : "7d66ff" },
+        "parameter": { "color" : "80dc62" },
+        "property": { "color" : "a9dc98" },
+        "label": { "color" : "615a60" },
+        "number": { "color": "3befff" },
+        "string": { "color": "6ab651" }
+    },
+
     "groups": {
         "title-bar": ["#202020", "#253aa5", "#8b0107", "picker"],
         "button-bg": ["#373737", "#222222", "picker"]

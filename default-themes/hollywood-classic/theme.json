@@ -8,5 +8,24 @@
         "actionbar-direction": 0,
         "classiclayout": true,
         "navbarstyle": 0
+    },
+    "syntaxHighlight": {
+        "comment": { "color" : "35b683" },
+        "keyword": { "color" : "ff8000", "fontStyle": "bold" },
+        "operator": { "color" : "f7d979" },
+        "namespace": { "color" : "f7d979" },
+        "type": { "color" : "ff9135" },
+        "struct": { "color" : "f7d979" },
+        "class": { "color" : "f7d979" },
+        "interface": { "color" : "f7d979" },
+        "enum": { "color" : "0077ff" },
+        "typeParameter": { "color" : "ff9135" },
+        "function": { "color" : "ff7f00" },
+        "member": { "color" : "ffc400" },
+        "macro": { "color" : "615a60" },
+        "variable": { "color" : "ffc400" },
+        "parameter": { "color" : "ffa200" },
+        "property": { "color" : "ffc400" },
+        "label": { "color" : "615a60" }
     }
 }
