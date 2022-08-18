@@ -171,3 +171,7 @@ $ux-uisettings-entry-bg-select: #486a9c;
 #nav_bar.vertical .nav_entry.selected {
     background-color: adjust-color($ui-bg-color, $lightness: 5%);
 }
+
+#ban_logo {
+    background-image: url('assets/logo_black.svg');
+}
