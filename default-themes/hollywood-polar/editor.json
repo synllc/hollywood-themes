@@ -1,0 +1,1868 @@
+{
+  "inherit": true,
+  "base": "vs",
+  "colors": {
+    "focusBorder": "#ECEFF4",
+    "foreground": "#4C566A",
+    "activityBar.background": "#f9fafb",
+    "activityBar.foreground": "#4C566A",
+    "activityBar.activeBorder": "#88c0d0",
+    "activityBar.activeBackground": "#ECEFF4",
+    "activityBarBadge.background": "#88c0d0",
+    "activityBarBadge.foreground": "#f9fafb",
+    "badge.foreground": "#f9fafb",
+    "badge.background": "#88c0d0",
+    "button.background": "#E5E9F0",
+    "button.foreground": "#4C566A",
+    "button.hoverBackground": "#D8DEE9",
+    "debugExceptionWidget.background": "#D8DEE9",
+    "debugExceptionWidget.border": "#f9fafb",
+    "debugToolBar.background": "#ECEFF4",
+    "descriptionForeground": "#4C566Ae6",
+    "diffEditor.insertedTextBackground": "#81a1c133",
+    "diffEditor.removedTextBackground": "#bf616a4d",
+    "dropdown.background": "#ECEFF4",
+    "dropdown.border": "#ECEFF4",
+    "dropdown.foreground": "#4C566A",
+    "editorCursor.foreground": "#4C566A",
+    "editorHint.border": "#ebcb8b00",
+    "editorHint.foreground": "#ebcb8b",
+    "editorIndentGuide.background": "#E5E9F0B3",
+    "editorIndentGuide.activeBackground": "#D8DEE9",
+    "editorLineNumber.foreground": "#D8DEE9",
+    "editorLineNumber.activeForeground": "#4C566A",
+    "editorWhitespace.foreground": "#D8DEE9b3",
+    "editorWidget.background": "#f9fafb",
+    "editorWidget.border": "#ECEFF4",
+    "editor.background": "#f9fafb",
+    "editor.foreground": "#4C566A",
+    "editor.hoverHighlightBackground": "#ECEFF4",
+    "editor.findMatchBackground": "#88c0d066",
+    "editor.findMatchHighlightBackground": "#88c0d033",
+    "editor.findRangeHighlightBackground": "#88c0d033",
+    "editor.lineHighlightBackground": "#ECEFF4",
+    "editor.lineHighlightBorder": "#ECEFF4",
+    "editor.inactiveSelectionBackground": "#E5E9F0cc",
+    "editor.selectionBackground": "#E5E9F0cc",
+    "editor.selectionHighlightBackground": "#E5E9F0cc",
+    "editor.rangeHighlightBackground": "#E5E9F052",
+    "editor.wordHighlightBackground": "#81a1c166",
+    "editor.wordHighlightStrongBackground": "#81a1c199",
+    "editorError.foreground": "#bf616a",
+    "editorError.border": "#bf616a00",
+    "editorWarning.foreground": "#ebcb8b",
+    "editorWarning.border": "#ebcb8b00",
+    "editorBracketMatch.background": "#FAFAFE00",
+    "editorBracketMatch.border": "#88c0d0",
+    "editorCodeLens.foreground": "#D8DEE9",
+    "editorGroup.background": "#f9fafb",
+    "editorGroup.emptyBackground": "#f9fafb",
+    "editorGroup.border": "#ECEFF401",
+    "editorGroup.dropBackground": "#ECEFF499",
+    "editorGroupHeader.noTabsBackground": "#f9fafb",
+    "editorGroupHeader.tabsBackground": "#f9fafb",
+    "editorGroupHeader.tabsBorder": "#ECEFF400",
+    "editorGutter.background": "#f9fafb",
+    "editorGutter.modifiedBackground": "#ebcb8b",
+    "editorGutter.addedBackground": "#a3be8c",
+    "editorGutter.deletedBackground": "#bf616a",
+    "editorHoverWidget.background": "#ECEFF4",
+    "editorHoverWidget.border": "#ECEFF4",
+    "editorLink.activeForeground": "#88c0d0",
+    "editorMarkerNavigation.background": "#5e81acc0",
+    "editorMarkerNavigationError.background": "#bf616ac0",
+    "editorMarkerNavigationWarning.background": "#ebcb8bc0",
+    "editorOverviewRuler.border": "#ECEFF4",
+    "editorOverviewRuler.currentContentForeground": "#ECEFF4",
+    "editorOverviewRuler.incomingContentForeground": "#ECEFF4",
+    "editorOverviewRuler.findMatchForeground": "#88c0d066",
+    "editorOverviewRuler.rangeHighlightForeground": "#88c0d066",
+    "editorOverviewRuler.selectionHighlightForeground": "#88c0d066",
+    "editorOverviewRuler.wordHighlightForeground": "#88c0d066",
+    "editorOverviewRuler.wordHighlightStrongForeground": "#88c0d066",
+    "editorOverviewRuler.modifiedForeground": "#ebcb8b",
+    "editorOverviewRuler.addedForeground": "#a3be8c",
+    "editorOverviewRuler.deletedForeground": "#bf616a",
+    "editorOverviewRuler.errorForeground": "#bf616a",
+    "editorOverviewRuler.warningForeground": "#ebcb8b",
+    "editorOverviewRuler.infoForeground": "#81a1c1",
+    "editorRuler.foreground": "#E5E9F0",
+    "editorSuggestWidget.background": "#f9fafb",
+    "editorSuggestWidget.border": "#ECEFF4",
+    "editorSuggestWidget.foreground": "#4C566A",
+    "editorSuggestWidget.highlightForeground": "#88c0d0",
+    "editorSuggestWidget.selectedBackground": "#E5E9F0",
+    "extensionButton.prominentForeground": "#4C566A",
+    "extensionButton.prominentBackground": "#E5E9F0",
+    "extensionButton.prominentHoverBackground": "#D8DEE9",
+    "errorForeground": "#bf616a",
+    "gitDecoration.modifiedResourceForeground": "#ebcb8b",
+    "gitDecoration.deletedResourceForeground": "#bf616a",
+    "gitDecoration.untrackedResourceForeground": "#a3be8c",
+    "gitDecoration.ignoredResourceForeground": "#4C566A66",
+    "gitDecoration.conflictingResourceForeground": "#5e81ac",
+    "gitDecoration.submoduleResourceForeground": "#8fbcbb",
+    "input.background": "#ECEFF4",
+    "input.foreground": "#4C566A",
+    "input.placeholderForeground": "#4C566A99",
+    "input.border": "#ECEFF4",
+    "inputOption.activeBackground": "#5e81ac",
+    "inputOption.activeBorder": "#5e81ac",
+    "inputValidation.errorBackground": "#bf616a",
+    "inputValidation.errorBorder": "#bf616a",
+    "inputValidation.infoBackground": "#81a1c1",
+    "inputValidation.infoBorder": "#81a1c1",
+    "inputValidation.warningBackground": "#d08770",
+    "inputValidation.warningBorder": "#d08770",
+    "list.activeSelectionBackground": "#88c0d0",
+    "list.activeSelectionForeground": "#f9fafb",
+    "list.inactiveSelectionBackground": "#E5E9F0",
+    "list.inactiveSelectionForeground": "#4C566A",
+    "list.inactiveFocusBackground": "#E5E9F0cc",
+    "list.hoverForeground": "#3B4252",
+    "list.focusForeground": "#4C566A",
+    "list.focusBackground": "#88c0d099",
+    "list.hoverBackground": "#ECEFF4",
+    "list.dropBackground": "#88c0d099",
+    "list.highlightForeground": "#88c0d0",
+    "list.errorForeground": "#bf616a",
+    "list.warningForeground": "#ebcb8b",
+    "merge.currentHeaderBackground": "#81a1c166",
+    "merge.currentContentBackground": "#81a1c14d",
+    "merge.incomingHeaderBackground": "#8fbcbb66",
+    "merge.incomingContentBackground": "#8fbcbb4d",
+    "merge.border": "#ECEFF400",
+    "minimap.findMatchHighlight": "#88c0d0",
+    "notificationCenter.border": "#ECEFF400",
+    "notificationCenterHeader.background": "#f9fafb",
+    "notificationCenterHeader.foreground": "#88c0d0",
+    "notificationLink.foreground": "#88c0d0",
+    "notifications.background": "#ECEFF4",
+    "notifications.border": "#f9fafb",
+    "notifications.foreground": "#4C566A",
+    "notificationToast.border": "#ECEFF400",
+    "panel.background": "#f9fafb",
+    "panel.border": "#ECEFF4",
+    "panelTitle.activeBorder": "#88c0d000",
+    "panelTitle.activeForeground": "#88c0d0",
+    "panelTitle.inactiveForeground": "#4C566A",
+    "peekView.border": "#D8DEE9",
+    "peekViewEditor.background": "#f9fafb",
+    "peekViewEditorGutter.background": "#f9fafb",
+    "peekViewEditor.matchHighlightBackground": "#88c0d04d",
+    "peekViewResult.background": "#f9fafb",
+    "peekViewResult.fileForeground": "#88c0d0",
+    "peekViewResult.lineForeground": "#4C566A66",
+    "peekViewResult.matchHighlightBackground": "#88c0d0cc",
+    "peekViewResult.selectionBackground": "#E5E9F0",
+    "peekViewResult.selectionForeground": "#4C566A",
+    "peekViewTitle.background": "#ECEFF4",
+    "peekViewTitleDescription.foreground": "#4C566A",
+    "peekViewTitleLabel.foreground": "#88c0d0",
+    "pickerGroup.border": "#ECEFF4",
+    "pickerGroup.foreground": "#88c0d0",
+    "progressBar.background": "#88c0d0",
+    "scrollbar.shadow": "#00000066",
+    "scrollbarSlider.activeBackground": "#E5E9F0aa",
+    "scrollbarSlider.background": "#E5E9F099",
+    "scrollbarSlider.hoverBackground": "#E5E9F0aa",
+    "selection.background": "#88c0d099",
+    "sideBar.background": "#f9fafb",
+    "sideBar.foreground": "#4C566A",
+    "sideBar.border": "#ECEFF4",
+    "sideBarSectionHeader.background": "#ECEFF4",
+    "sideBarSectionHeader.foreground": "#4C566A",
+    "sideBarTitle.foreground": "#4C566A",
+    "statusBar.background": "#ECEFF4",
+    "statusBar.debuggingBackground": "#5e81ac",
+    "statusBar.debuggingForeground": "#4C566A",
+    "statusBar.noFolderForeground": "#4C566A",
+    "statusBar.noFolderBackground": "#ECEFF4",
+    "statusBar.foreground": "#4C566A",
+    "statusBarItem.activeBackground": "#D8DEE9",
+    "statusBarItem.hoverBackground": "#E5E9F0",
+    "statusBarItem.prominentBackground": "#ECEFF4",
+    "statusBarItem.prominentHoverBackground": "#E5E9F0",
+    "statusBar.border": "#ECEFF400",
+    "tab.activeBackground": "#ECEFF4",
+    "tab.activeForeground": "#4C566A",
+    "tab.border": "#ECEFF400",
+    "tab.activeBorder": "#88c0d000",
+    "tab.unfocusedActiveBorder": "#88c0d000",
+    "tab.inactiveBackground": "#f9fafb",
+    "tab.inactiveForeground": "#4C566A66",
+    "tab.unfocusedActiveForeground": "#4C566A99",
+    "tab.unfocusedInactiveForeground": "#4C566A66",
+    "tab.hoverBackground": "#ECEFF4cc",
+    "tab.unfocusedHoverBackground": "#ECEFF4b3",
+    "tab.hoverBorder": "#88c0d000",
+    "tab.unfocusedHoverBorder": "#88c0d000",
+    "tab.activeBorderTop": "#88c0d000",
+    "tab.unfocusedActiveBorderTop": "#88c0d000",
+    "terminal.background": "#f9fafb",
+    "terminal.foreground": "#4C566A",
+    "terminal.ansiBlack": "#ECEFF4",
+    "terminal.ansiRed": "#bf616a",
+    "terminal.ansiGreen": "#a3be8c",
+    "terminal.ansiYellow": "#ebcb8b",
+    "terminal.ansiBlue": "#81a1c1",
+    "terminal.ansiMagenta": "#b48ead",
+    "terminal.ansiCyan": "#88c0d0",
+    "terminal.ansiWhite": "#e5e9f0",
+    "terminal.ansiBrightBlack": "#D8DEE9",
+    "terminal.ansiBrightRed": "#bf616a",
+    "terminal.ansiBrightGreen": "#a3be8c",
+    "terminal.ansiBrightYellow": "#ebcb8b",
+    "terminal.ansiBrightBlue": "#81a1c1",
+    "terminal.ansiBrightMagenta": "#b48ead",
+    "terminal.ansiBrightCyan": "#8fbcbb",
+    "terminal.ansiBrightWhite": "#3B4252",
+    "textBlockQuote.background": "#ECEFF4",
+    "textBlockQuote.border": "#81a1c1",
+    "textCodeBlock.background": "#D8DEE9",
+    "textLink.activeForeground": "#88c0d0",
+    "textLink.foreground": "#88c0d0",
+    "textPreformat.foreground": "#8fbcbb",
+    "textSeparator.foreground": "#3B4252",
+    "titleBar.activeBackground": "#f9fafb",
+    "titleBar.activeForeground": "#4C566A",
+    "titleBar.border": "#2e344000",
+    "titleBar.inactiveBackground": "#f9fafb",
+    "titleBar.inactiveForeground": "#4C566A66",
+    "tree.indentGuidesStroke": "#ACB9D0",
+    "walkThrough.embeddedEditorBackground": "#f9fafb",
+    "welcomePage.buttonBackground": "#E5E9F0",
+    "welcomePage.buttonHoverBackground": "#D8DEE9",
+    "widget.shadow": "#00000066"
+  },
+  "rules": [
+    {
+      "name": "Comments and overrides inside comments",
+      "fontStyle": "italic",
+      "foreground": "#727072",
+      "token": "comment"
+    },
+    {
+      "name": "Comments and overrides inside comments",
+      "fontStyle": "italic",
+      "foreground": "#727072",
+      "token": "comment keyword"
+    },
+    {
+      "name": "Comments and overrides inside comments",
+      "fontStyle": "italic",
+      "foreground": "#727072",
+      "token": "comment markup.underline.link"
+    },
+    {
+      "name": "Comments and overrides inside comments",
+      "fontStyle": "italic",
+      "foreground": "#727072",
+      "token": "comment string"
+    },
+    {
+      "name": "Comments and overrides inside comments",
+      "fontStyle": "italic",
+      "foreground": "#727072",
+      "token": "comment punctuation.definition"
+    },
+    {
+      "name": "Comments and overrides inside comments",
+      "fontStyle": "italic",
+      "foreground": "#727072",
+      "token": "comment punctuation"
+    },
+    {
+      "name": "Comments and overrides inside comments",
+      "fontStyle": "italic",
+      "foreground": "#727072",
+      "token": "comment text"
+    },
+    {
+      "name": "JSDoc storage type",
+      "foreground": "#727072",
+      "token": "comment storage.type"
+    },
+    {
+      "name": "JSDoc entity name",
+      "foreground": "#c1c0c0",
+      "token": "comment entity.name.type"
+    },
+    {
+      "name": "JSDoc variable",
+      "foreground": "#c1c0c0",
+      "token": "comment variable"
+    },
+    {
+      "name": "JSDoc variable",
+      "foreground": "#c1c0c0",
+      "token": "comment variable.other"
+    },
+    {
+      "name": "Comment TODO / FIXME (at least in VSCode Python)",
+      "foreground": "#ab9df2",
+      "token": "comment keyword.codetag.notation"
+    },
+    {
+      "name": "git status remote",
+      "foreground": "#ff6188",
+      "token": "comment.git-status.header.remote"
+    },
+    {
+      "name": "git status local",
+      "foreground": "#78dce8",
+      "token": "comment.git-status.header.local"
+    },
+    {
+      "name": "git status remote",
+      "foreground": "#2e3440",
+      "token": "comment.other.git-status.head"
+    },
+    {
+      "name": "Constant",
+      "foreground": "#ab9df2",
+      "token": "constant"
+    },
+    {
+      "name": "Constant",
+      "foreground": "#2e3440",
+      "token": "constant.other"
+    },
+    {
+      "name": "Constant",
+      "foreground": "#ab9df2",
+      "token": "constant.other.php"
+    },
+    {
+      "name": "Constant as property",
+      "foreground": "#ab9df2",
+      "token": "constant.other.property"
+    },
+    {
+      "name": "Constant in latex",
+      "foreground": "#ab9df2",
+      "token": "constant.other.citation.latex"
+    },
+    {
+      "name": "Constant as color (in css / sass)",
+      "foreground": "#ab9df2",
+      "token": "constant.other.color"
+    },
+    {
+      "name": "Constant as character class escape (e.g. in regex)",
+      "foreground": "#ab9df2",
+      "token": "constant.other.character-class.escape"
+    },
+    {
+      "name": "Constant as key (e.g. in puppet manifests)",
+      "foreground": "#ab9df2",
+      "token": "constant.other.key"
+    },
+    {
+      "name": "Constant as symbol (e.g. in ruby)",
+      "foreground": "#fc9867",
+      "token": "constant.other.symbol"
+    },
+    {
+      "name": "Constants in elm",
+      "foreground": "#78dce8",
+      "token": "constant.other.elm"
+    },
+    {
+      "name": "Number",
+      "foreground": "#ab9df2",
+      "token": "constant.numeric"
+    },
+    {
+      "name": "Constant",
+      "foreground": "#ab9df2",
+      "token": "constant.language"
+    },
+    {
+      "name": "Character escape",
+      "foreground": "#ab9df2",
+      "token": "constant.character.escape"
+    },
+    {
+      "name": "Search result line numbers",
+      "foreground": "#5b595c",
+      "token": "constant.numeric.line-number.find-in-files"
+    },
+    {
+      "name": "Search result matched line numbes",
+      "foreground": "#ffd866",
+      "token": "constant.numeric.line-number.match.find-in-files"
+    },
+    {
+      "name": "Sections",
+      "foreground": "#ffd866",
+      "token": "entity.name.section"
+    },
+    {
+      "name": "Functions",
+      "foreground": "#a9dc76",
+      "token": "entity.name.function"
+    },
+    {
+      "name": "Functions",
+      "foreground": "#a9dc76",
+      "token": "entity.name.function.templated"
+    },
+    {
+      "name": "Functions",
+      "foreground": "#2e3440",
+      "token": "entity.name.function.member.static"
+    },
+    {
+      "name": "Class template",
+      "foreground": "#78dce8",
+      "token": "entity.name.type.class.templated"
+    },
+    {
+      "name": "Class template",
+      "foreground": "#78dce8",
+      "token": "entity.name.type.class.generic"
+    },
+    {
+      "name": "Class template",
+      "foreground": "#78dce8",
+      "token": "entity.name.type.namespace"
+    },
+    {
+      "name": "label",
+      "foreground": "#ab9df2",
+      "token": "entity.name.label"
+    },
+    {
+      "name": "Macros",
+      "foreground": "#78dce8",
+      "token": "entity.name.function.preprocessor"
+    },
+    {
+      "name": "Entity name",
+      "foreground": "#a9dc76",
+      "token": "entity.name"
+    },
+    {
+      "name": "Class name",
+      "foreground": "#78dce8",
+      "token": "entity.name.class"
+    },
+    {
+      "name": "Constant name",
+      "foreground": "#ab9df2",
+      "token": "entity.name.constant"
+    },
+    {
+      "name": "Namespace",
+      "foreground": "#2e3440",
+      "token": "entity.name.namespace"
+    },
+    {
+      "name": "Inherited class",
+      "fontStyle": "italic",
+      "foreground": "#78dce8",
+      "token": "entity.other.inherited-class"
+    },
+    {
+      "name": "Function name",
+      "foreground": "#a9dc76",
+      "token": "entity.name.function"
+    },
+    {
+      "name": "Tag name",
+      "foreground": "#ff6188",
+      "token": "entity.name.tag"
+    },
+    {
+      "name": "Tag name",
+      "foreground": "#ff6188",
+      "token": "entity.name.tag.js.jsx support.class.component.js.jsx"
+    },
+    {
+      "name": "Tag name",
+      "foreground": "#ff6188",
+      "token": "entity.name.tag support.class.component"
+    },
+    {
+      "name": "Tag name",
+      "foreground": "#ff6188",
+      "token": "source.vue support.class.component"
+    },
+    {
+      "name": "Operator",
+      "foreground": "#ff6188",
+      "token": "entity.name.function.operator"
+    },
+    {
+      "name": "Entity name type",
+      "foreground": "#78dce8",
+      "token": "entity.name.type"
+    },
+    {
+      "name": "Entity name type",
+      "foreground": "#78dce8",
+      "token": "entity.name.type.class.reference"
+    },
+    {
+      "name": "Entity name type",
+      "foreground": "#78dce8",
+      "token": "entity.name.type.class.value"
+    },
+    {
+      "name": "Tag attribute",
+      "fontStyle": "italic",
+      "foreground": "#78dce8",
+      "token": "entity.other.attribute-name"
+    },
+    {
+      "name": "CSS class",
+      "foreground": "#a9dc76",
+      "token": "entity.other.attribute-name.class.css"
+    },
+    {
+      "name": "CSS class",
+      "foreground": "#a9dc76",
+      "token": "entity.other.attribute-name.parent-selector-suffix.css"
+    },
+    {
+      "name": "CSS class",
+      "foreground": "#a9dc76",
+      "token": "entity.other.attribute-name.parent-selector-suffix.css punctuation.definition.entity.css"
+    },
+    {
+      "name": "CSS class",
+      "foreground": "#a9dc76",
+      "token": "entity.other.attribute-name.css"
+    },
+    {
+      "name": "CSS class",
+      "foreground": "#a9dc76",
+      "token": "entity.other.animation-name.css"
+    },
+    {
+      "name": "CSS id",
+      "foreground": "#fc9867",
+      "token": "entity.other.attribute-name.id.css"
+    },
+    {
+      "name": "CSS pseudo class",
+      "fontStyle": "italic",
+      "foreground": "#78dce8",
+      "token": "entity.other.attribute-name.pseudo-class.css"
+    },
+    {
+      "name": "CSS pseudo class",
+      "fontStyle": "italic",
+      "foreground": "#78dce8",
+      "token": "entity.other.pseudo-class.css"
+    },
+    {
+      "name": "CSS pseudo class",
+      "fontStyle": "italic",
+      "foreground": "#78dce8",
+      "token": "entity.other.pseudo-element.css"
+    },
+    {
+      "name": "Function names / calls",
+      "foreground": "#a9dc76",
+      "token": "entity.name.function"
+    },
+    {
+      "name": "Function names / calls",
+      "foreground": "#a9dc76",
+      "token": "support.function"
+    },
+    {
+      "name": "git status commit hex",
+      "foreground": "#ab9df2",
+      "token": "entity.other.git-status.hex"
+    },
+    {
+      "name": "jinja delimiters",
+      "foreground": "#939293",
+      "token": "entity.other.jinja2.delimiter"
+    },
+    {
+      "name": "custom literal",
+      "foreground": "#2e3440",
+      "token": "entity.name.operator.custom-literal"
+    },
+    {
+      "name": "custom literal string",
+      "foreground": "#ffd866",
+      "token": "entity.name.operator.custom-literal.string"
+    },
+    {
+      "name": "custom literal number",
+      "foreground": "#ab9df2",
+      "token": "entity.name.operator.custom-literal.number"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#78dce8",
+      "token": "entity.name.type.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#ff6188",
+      "token": "entity.name.lifetime.rust"
+    },
+    {
+      "name": "Invalid",
+      "fontStyle": "italic",
+      "token": "invalid"
+    },
+    {
+      "name": "Keyword",
+      "foreground": "#ff6188",
+      "token": "keyword"
+    },
+    {
+      "name": "Control keywords examples include if, try, end and while. Some syntaxes prefer to mark if and else with the conditional variant. The import variant is often used in appropriate situations.",
+      "foreground": "#ff6188",
+      "token": "keyword.control"
+    },
+    {
+      "name": "keyword control directive",
+      "foreground": "#ff6188",
+      "token": "keyword.control.directive"
+    },
+    {
+      "name": "Operator",
+      "foreground": "#ff6188",
+      "token": "keyword.operator"
+    },
+    {
+      "name": "Operator",
+      "foreground": "#ff6188",
+      "token": "keyword.operator.member"
+    },
+    {
+      "name": "Operator",
+      "foreground": "#ff6188",
+      "token": "keyword.operator.new"
+    },
+    {
+      "name": "Substitution string",
+      "foreground": "#939293",
+      "token": "keyword.other.substitution"
+    },
+    {
+      "name": "Template literal begin / end",
+      "foreground": "#ff6188",
+      "token": "keyword.other.template.begin"
+    },
+    {
+      "name": "Template literal begin / end",
+      "foreground": "#ff6188",
+      "token": "keyword.other.template.end"
+    },
+    {
+      "name": "RestructuredText heading, table markup",
+      "foreground": "#939293",
+      "token": "keyword.operator.heading.restructuredtext"
+    },
+    {
+      "name": "RestructuredText heading, table markup",
+      "foreground": "#939293",
+      "token": "keyword.operator.table.row.restructuredtext keyword.operator.table.data.restructuredtext"
+    },
+    {
+      "name": "elm parenthesis",
+      "foreground": "#939293",
+      "token": "keyword.other.parenthesis.elm"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#78dce8",
+      "token": "keyword.other.fn.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#78dce8",
+      "token": "keyword.other.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#78dce8",
+      "token": "keyword.other.unsafe.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#78dce8",
+      "token": "keyword.other.where.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#ff6188",
+      "token": "keyword.control.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#ff6188",
+      "token": "keyword.operator.misc.rust"
+    },
+    {
+      "name": "ruby specific",
+      "foreground": "#ff6188",
+      "token": "keyword.declaration.class.ruby"
+    },
+    {
+      "name": "ruby specific",
+      "foreground": "#ff6188",
+      "token": "keyword.declaration.function.ruby"
+    },
+    {
+      "name": "Italic",
+      "fontStyle": "italic",
+      "token": "markup.italic"
+    },
+    {
+      "name": "Bold",
+      "fontStyle": "bold",
+      "token": "markup.bold"
+    },
+    {
+      "name": "Heading",
+      "foreground": "#ffd866",
+      "token": "markup.heading"
+    },
+    {
+      "name": "Raw",
+      "foreground": "#fc9867",
+      "token": "markup.raw"
+    },
+    {
+      "name": "Underline",
+      "fontStyle": "underline",
+      "token": "markup.underline"
+    },
+    {
+      "name": "Link",
+      "foreground": "#a9dc76",
+      "token": "markup.underline.link"
+    },
+    {
+      "name": "Diff inserted",
+      "foreground": "#a9dc76",
+      "token": "markup.inserted"
+    },
+    {
+      "name": "Diff inserted",
+      "foreground": "#a9dc76",
+      "token": "markup.inserted punctuation.definition.inserted"
+    },
+    {
+      "name": "Diff deleted",
+      "foreground": "#ff6188",
+      "token": "markup.deleted"
+    },
+    {
+      "name": "Diff deleted",
+      "foreground": "#ff6188",
+      "token": "markup.deleted punctuation.definition.deleted"
+    },
+    {
+      "name": "Diff changed",
+      "foreground": "#ffd866",
+      "token": "markup.changed"
+    },
+    {
+      "name": "Diff changed",
+      "foreground": "#ffd866",
+      "token": "markup.changed punctuation.definition.changed"
+    },
+    {
+      "name": "Diff ignored",
+      "foreground": "#939293",
+      "token": "markup.ignored"
+    },
+    {
+      "name": "Diff ignored",
+      "foreground": "#939293",
+      "token": "markup.ignored punctuation.definition.ignored"
+    },
+    {
+      "name": "Diff untracked",
+      "foreground": "#939293",
+      "token": "markup.untracked"
+    },
+    {
+      "name": "Markup quote",
+      "fontStyle": "italic",
+      "token": "markup.quote"
+    },
+    {
+      "name": "Braces, delimiters",
+      "foreground": "#939293",
+      "token": "meta.brace.round"
+    },
+    {
+      "name": "Braces, delimiters",
+      "foreground": "#939293",
+      "token": "meta.brace.square"
+    },
+    {
+      "name": "Braces, delimiters",
+      "foreground": "#939293",
+      "token": "meta.brace.curly"
+    },
+    {
+      "name": "Braces, delimiters",
+      "foreground": "#939293",
+      "token": "meta.delimiter.comma.js"
+    },
+    {
+      "name": "Braces, delimiters",
+      "foreground": "#939293",
+      "token": "meta.function-call.without-arguments.js"
+    },
+    {
+      "name": "Braces, delimiters",
+      "foreground": "#939293",
+      "token": "meta.function-call.method.without-arguments.js"
+    },
+    {
+      "name": "Function call (vs)",
+      "foreground": "#a9dc76",
+      "token": "meta.function-call.generic.python"
+    },
+    {
+      "name": "Function call (vs)",
+      "foreground": "#a9dc76",
+      "token": "support.function.builtin.python"
+    },
+    {
+      "name": "Function arguments (vs)",
+      "foreground": "#2e3440",
+      "token": "meta.function-call.python meta.function-call.arguments.python"
+    },
+    {
+      "name": "Constructor (new MyClass())",
+      "foreground": "#a9dc76",
+      "token": "meta.instance.constructor"
+    },
+    {
+      "name": "Class string name (i.e. in html attributes)",
+      "foreground": "#a9dc76",
+      "token": "meta.attribute-with-value.class string"
+    },
+    {
+      "name": "Class string name (i.e. in html attributes)",
+      "foreground": "#a9dc76",
+      "token": "meta.attribute.class.html string"
+    },
+    {
+      "name": "ID string name (i.e. in html attributes)",
+      "foreground": "#fc9867",
+      "token": "meta.attribute-with-value.id string"
+    },
+    {
+      "name": "ID string name (i.e. in html attributes)",
+      "foreground": "#fc9867",
+      "token": "meta.attribute.id.html string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON keys (and invisibles)",
+      "foreground": "#2e3440",
+      "token": "source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "JSON values",
+      "foreground": "#ffd866",
+      "token": "source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+    },
+    {
+      "name": "Object members",
+      "foreground": "#2e3440",
+      "token": "meta.object.member"
+    },
+    {
+      "name": "SCSS Variable",
+      "foreground": "#fc9867",
+      "token": "meta.property-list.css variable.other"
+    },
+    {
+      "name": "Preprocessor",
+      "foreground": "#ab9df2",
+      "token": "entity.name.constant.preprocessor"
+    },
+    {
+      "name": "Preprocessor",
+      "foreground": "#ab9df2",
+      "token": "meta.preprocessor"
+    },
+    {
+      "name": "git diff header",
+      "foreground": "#ffd866",
+      "token": "meta.diff.git-diff.header"
+    },
+    {
+      "name": "rust specific (brackets and certain type names)",
+      "foreground": "#2e3440",
+      "token": "meta.type_params.rust"
+    },
+    {
+      "name": "rust specific (variable.language.rust is 'self' keyword.",
+      "foreground": "#c1c0c0",
+      "token": "meta.attribute.rust"
+    },
+    {
+      "name": "rust specific (variable.language.rust is 'self' keyword.",
+      "foreground": "#c1c0c0",
+      "token": "meta.annotation.rust"
+    },
+    {
+      "name": "rust specific (variable.language.rust is 'self' keyword.",
+      "foreground": "#c1c0c0",
+      "token": "variable.language.rust"
+    },
+    {
+      "name": "rust specific (variable.language.rust is 'self' keyword.",
+      "foreground": "#c1c0c0",
+      "token": "variable.annotation.rust"
+    },
+    {
+      "name": "rust specific (variable.language.rust is 'self' keyword.",
+      "foreground": "#c1c0c0",
+      "token": "meta.annotation.rust string"
+    },
+    {
+      "name": "rust specific (variable.language.rust is 'self' keyword.",
+      "foreground": "#c1c0c0",
+      "token": "meta.annotation.rust keyword"
+    },
+    {
+      "name": "rust specific (variable.language.rust is 'self' keyword.",
+      "foreground": "#c1c0c0",
+      "token": "meta.annotation.rust keyword.operator"
+    },
+    {
+      "name": "rust specific (variable.language.rust is 'self' keyword.",
+      "foreground": "#c1c0c0",
+      "token": "meta.attribute.rust string"
+    },
+    {
+      "name": "Punctuation",
+      "foreground": "#939293",
+      "token": "punctuation"
+    },
+    {
+      "name": "Punctuation tags",
+      "foreground": "#939293",
+      "token": "punctuation.definition.tag"
+    },
+    {
+      "name": "Punctuation tags",
+      "foreground": "#939293",
+      "token": "punctuation.definition.tag source"
+    },
+    {
+      "name": "Punctuation tags",
+      "foreground": "#939293",
+      "token": "punctuation.definition.group.begin.ruby"
+    },
+    {
+      "name": "Punctuation tags",
+      "foreground": "#939293",
+      "token": "punctuation.definition.group.end.ruby"
+    },
+    {
+      "name": "Punctuation tags",
+      "foreground": "#939293",
+      "token": "punctuation.definition.group.begin.css"
+    },
+    {
+      "name": "Punctuation tags",
+      "foreground": "#939293",
+      "token": "punctuation.definition.group.end.css"
+    },
+    {
+      "name": "Punctuation tags",
+      "foreground": "#939293",
+      "token": "punctuation.definition.string.end.html source.css"
+    },
+    {
+      "name": "Group (i.e. in regex)",
+      "foreground": "#2e3440",
+      "token": "punctuation.definition.group"
+    },
+    {
+      "name": "Comment start / end",
+      "foreground": "#727072",
+      "token": "punctuation.definition.comment"
+    },
+    {
+      "name": "Variable indicator (i.e. in php or in include directives in sass)",
+      "foreground": "#c1c0c0",
+      "token": "punctuation.definition.variable"
+    },
+    {
+      "name": "Variable indicator (i.e. in php or in include directives in sass)",
+      "foreground": "#c1c0c0",
+      "token": "punctuation.definition.keyword.scss"
+    },
+    {
+      "name": "Variable indicator (i.e. in php or in include directives in sass)",
+      "foreground": "#c1c0c0",
+      "token": "punctuation.definition.entity.css"
+    },
+    {
+      "name": "Punctuation section embedded (i.e. ?php blocks in html)",
+      "foreground": "#fc9867",
+      "token": "punctuation.section.embedded"
+    },
+    {
+      "name": "Punctuation section embedded (i.e. ?php blocks in html)",
+      "foreground": "#fc9867",
+      "token": "punctuation.section.embedded entity.name.tag"
+    },
+    {
+      "name": "Punctuation section embedded (i.e. ?php blocks in html)",
+      "foreground": "#fc9867",
+      "token": "punctuation.section.embedded constant.other"
+    },
+    {
+      "name": "Punctuation section embedded (i.e. ?php blocks in html)",
+      "foreground": "#fc9867",
+      "token": "punctuation.section.embedded source"
+    },
+    {
+      "name": "Punctuation section embedded (i.e. ?php blocks in html)",
+      "foreground": "#fc9867",
+      "token": "punctuation.section.embedded.begin"
+    },
+    {
+      "name": "Punctuation template string (`example`)",
+      "foreground": "#ff6188",
+      "token": "punctuation.template-string.element.begin"
+    },
+    {
+      "name": "Punctuation template string (`example`)",
+      "foreground": "#ff6188",
+      "token": "punctuation.template-string.element.end"
+    },
+    {
+      "name": "Punctuation template string (`example`)",
+      "foreground": "#ff6188",
+      "token": "punctuation.definition.string.template.begin"
+    },
+    {
+      "name": "Punctuation template string (`example`)",
+      "foreground": "#ff6188",
+      "token": "punctuation.definition.string.template.end"
+    },
+    {
+      "name": "Punctuation template string (`example`)",
+      "foreground": "#ff6188",
+      "token": "string.quoted.template punctuation.definition.string.begin"
+    },
+    {
+      "name": "Punctuation template string (`example`)",
+      "foreground": "#ff6188",
+      "token": "string.quoted.template punctuation.definition.string.end"
+    },
+    {
+      "name": "Punctuation template string (`example`)",
+      "foreground": "#ff6188",
+      "token": "punctuation.definition.template-expression.begin"
+    },
+    {
+      "name": "Punctuation template string (`example`)",
+      "foreground": "#ff6188",
+      "token": "punctuation.definition.template-expression.end"
+    },
+    {
+      "Name": "Punctuation hard line break in Markdown",
+      "background": "#ab9df2",
+      "token": "meta.paragraph.markdown meta.dummy.line-break"
+    },
+    {
+      "Name": "Punctuation hard line break in Markdown",
+      "background": "#ab9df2",
+      "token": "meta.paragraph.markdown meta.hard-line-break.markdown"
+    },
+    {
+      "name": "region red color",
+      "foreground": "#ff6188",
+      "background": "#ff618859",
+      "token": "region.redish"
+    },
+    {
+      "name": "region orange color",
+      "foreground": "#fc9867",
+      "background": "#fc986759",
+      "token": "region.orangish"
+    },
+    {
+      "name": "region yellow color",
+      "foreground": "#ffd866",
+      "background": "#ffd86659",
+      "token": "region.yellowish"
+    },
+    {
+      "name": "region green color",
+      "foreground": "#a9dc76",
+      "background": "#a9dc7659",
+      "token": "region.greenish"
+    },
+    {
+      "name": "region blue color",
+      "foreground": "#78dce8",
+      "background": "#78dce859",
+      "token": "region.bluish"
+    },
+    {
+      "name": "region purple color",
+      "foreground": "#ab9df2",
+      "background": "#ab9df259",
+      "token": "region.purplish"
+    },
+    {
+      "name": "region pink color",
+      "foreground": "#ff6188",
+      "background": "#ff618859",
+      "token": "region.pinkish"
+    },
+    {
+      "name": "White for ST3 for non-colorized scheme",
+      "foreground": "#FFFFFF",
+      "token": "region.whitish"
+    },
+    {
+      "name": "source",
+      "foreground": "#2e3440",
+      "token": "source"
+    },
+    {
+      "name": "SASS, SCSS default",
+      "foreground": "#939293",
+      "token": "source.scss"
+    },
+    {
+      "name": "SASS, SCSS default",
+      "foreground": "#939293",
+      "token": "source.sass"
+    },
+    {
+      "name": "SASS, SCSS and LESS variables",
+      "fontStyle": "italic",
+      "foreground": "#fc9867",
+      "token": "source.sass variable.other"
+    },
+    {
+      "name": "SASS, SCSS and LESS variables",
+      "fontStyle": "italic",
+      "foreground": "#fc9867",
+      "token": "source.sass variable.sass"
+    },
+    {
+      "name": "SASS, SCSS and LESS variables",
+      "fontStyle": "italic",
+      "foreground": "#fc9867",
+      "token": "source.scss variable.other"
+    },
+    {
+      "name": "SASS, SCSS and LESS variables",
+      "fontStyle": "italic",
+      "foreground": "#fc9867",
+      "token": "source.scss variable.scss"
+    },
+    {
+      "name": "SASS, SCSS and LESS variables",
+      "fontStyle": "italic",
+      "foreground": "#fc9867",
+      "token": "source.scss variable.sass"
+    },
+    {
+      "name": "SASS, SCSS and LESS variables",
+      "fontStyle": "italic",
+      "foreground": "#fc9867",
+      "token": "source.css variable.other"
+    },
+    {
+      "name": "SASS, SCSS and LESS variables",
+      "fontStyle": "italic",
+      "foreground": "#fc9867",
+      "token": "source.css variable.scss"
+    },
+    {
+      "name": "SASS, SCSS and LESS variables",
+      "fontStyle": "italic",
+      "foreground": "#fc9867",
+      "token": "source.less variable.other"
+    },
+    {
+      "name": "SASS, SCSS and LESS variables",
+      "fontStyle": "italic",
+      "foreground": "#fc9867",
+      "token": "source.less variable.other.less"
+    },
+    {
+      "name": "SASS, SCSS and LESS variables",
+      "fontStyle": "italic",
+      "foreground": "#fc9867",
+      "token": "source.less variable.declaration.less"
+    },
+    {
+      "name": "git",
+      "foreground": "#ab9df2",
+      "token": "source.git-show.commit.sha"
+    },
+    {
+      "name": "git",
+      "foreground": "#939293",
+      "token": "source.git-show.author"
+    },
+    {
+      "name": "git",
+      "foreground": "#939293",
+      "token": "source.git-show.date"
+    },
+    {
+      "name": "git",
+      "foreground": "#939293",
+      "token": "source.git-diff.command"
+    },
+    {
+      "name": "git",
+      "foreground": "#939293",
+      "token": "source.git-diff.command meta.diff.git-diff.header.from-file"
+    },
+    {
+      "name": "git",
+      "foreground": "#939293",
+      "token": "source.git-diff.command meta.diff.git-diff.header.to-file"
+    },
+    {
+      "name": "git diff header hash",
+      "foreground": "#ab9df2",
+      "token": "source.git-show meta.diff.git-diff.header.extended.index.from-sha"
+    },
+    {
+      "name": "git diff header hash",
+      "foreground": "#ab9df2",
+      "token": "source.git-show meta.diff.git-diff.header.extended.index.to-sha"
+    },
+    {
+      "name": "git diff header range",
+      "foreground": "#fc9867",
+      "token": "source.git-show meta.diff.range.unified"
+    },
+    {
+      "name": "git diff header files",
+      "foreground": "#939293",
+      "token": "source.git-show meta.diff.header.from-file"
+    },
+    {
+      "name": "git diff header files",
+      "foreground": "#939293",
+      "token": "source.git-show meta.diff.header.to-file"
+    },
+    {
+      "name": "Storage",
+      "foreground": "#ff6188",
+      "token": "storage"
+    },
+    {
+      "name": "Types and definition / declaration keywords should use the following scope. Examples include int, bool, char, func, function, class and def. Depending on the language and semantics, const may be this or storage.modifier.",
+      "fontStyle": "italic",
+      "foreground": "#78dce8",
+      "token": "storage.type"
+    },
+    {
+      "name": "Extends",
+      "fontStyle": "normal",
+      "foreground": "#ff6188",
+      "token": "storage.type.extends"
+    },
+    {
+      "name": "Fat arrow function",
+      "fontStyle": "normal",
+      "foreground": "#ff6188",
+      "token": "storage.type.function.arrow"
+    },
+    {
+      "name": "Keywords that affect the storage of a variable, function or data structure should use the following scope. Examples include static, inline, const, public and private.",
+      "fontStyle": "italic",
+      "foreground": "#ff6188",
+      "token": "storage.modifier"
+    },
+    {
+      "name": "Keywords that affect the storage of a variable, function or data structure should use the following scope. Examples include static, inline, const, public and private.",
+      "fontStyle": "italic",
+      "foreground": "#ff6188",
+      "token": "storage.type.modifier"
+    },
+    {
+      "name": "refs (Restructured text)",
+      "foreground": "#ab9df2",
+      "token": "storage.class.restructuredtext.ref"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#ff6188",
+      "token": "storage.modifier.visibility.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#ff6188",
+      "token": "storage.modifier.lifetime.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#78dce8",
+      "token": "storage.modifier.const.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#78dce8",
+      "token": "storage.modifier.dyn.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#78dce8",
+      "token": "storage.modifier.mut.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#78dce8",
+      "token": "storage.modifier.static.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#78dce8",
+      "token": "storage.type.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#78dce8",
+      "token": "storage.type.core.rust"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#78dce8",
+      "token": "storage.class.std.rust"
+    },
+    {
+      "name": "rust specific (adjust blue to red)",
+      "foreground": "#ff6188",
+      "token": "storage.type.rust"
+    },
+    {
+      "name": "rust specific (adjust blue to red)",
+      "foreground": "#ff6188",
+      "token": "storage.modifier.const.rust"
+    },
+    {
+      "name": "rust specific (adjust blue to red)",
+      "foreground": "#ff6188",
+      "token": "storage.modifier.dyn.rust"
+    },
+    {
+      "name": "rust specific (adjust blue to red)",
+      "foreground": "#ff6188",
+      "token": "storage.modifier.mut.rust"
+    },
+    {
+      "name": "rust specific (adjust blue to red)",
+      "foreground": "#ff6188",
+      "token": "storage.modifier.static.rust"
+    },
+    {
+      "name": "rust specific (adjust blue to red)",
+      "foreground": "#ff6188",
+      "token": "keyword.other.rust"
+    },
+    {
+      "name": "rust specific (adjust blue to red)",
+      "foreground": "#ff6188",
+      "token": "keyword.other.where.rust"
+    },
+    {
+      "name": "String",
+      "foreground": "#ffd866",
+      "token": "string"
+    },
+    {
+      "name": "String label",
+      "foreground": "#2e3440",
+      "token": "string.unquoted.label"
+    },
+    {
+      "name": "Source in template string",
+      "foreground": "#2e3440",
+      "token": "string source"
+    },
+    {
+      "name": "Embedded punctuation begin / end in template string",
+      "foreground": "#939293",
+      "token": "string source punctuation.section.embedded"
+    },
+    {
+      "name": "Embedded punctuation begin / end in template string",
+      "foreground": "#939293",
+      "token": "string punctuation.definition.string source"
+    },
+    {
+      "name": "link title",
+      "foreground": "#ff6188",
+      "token": "string.other.link.title"
+    },
+    {
+      "name": "link title",
+      "foreground": "#ff6188",
+      "token": "string.other.link.description"
+    },
+    {
+      "name": "link description",
+      "foreground": "#78dce8",
+      "token": "string.other.link.description.title"
+    },
+    {
+      "name": "String regexp begin / end",
+      "foreground": "#ff6188",
+      "token": "string.regexp punctuation.definition.string.begin"
+    },
+    {
+      "name": "String regexp begin / end",
+      "foreground": "#ff6188",
+      "token": "string.regexp punctuation.definition.string.end"
+    },
+    {
+      "name": "refs (Restructured text)",
+      "foreground": "#a9dc76",
+      "token": "string.other.ref"
+    },
+    {
+      "name": "refs (Restructured text)",
+      "foreground": "#a9dc76",
+      "token": "string.other.restructuredtext.ref"
+    },
+    {
+      "name": "git key in git status help text",
+      "foreground": "#c1c0c0",
+      "token": "string.other.git-status.help.key"
+    },
+    {
+      "name": "git status remote",
+      "foreground": "#ff6188",
+      "token": "string.other.git-status.remote"
+    },
+    {
+      "name": "Library constant",
+      "foreground": "#78dce8",
+      "token": "support.constant"
+    },
+    {
+      "name": "Handlebars start / end",
+      "foreground": "#939293",
+      "token": "support.constant.handlebars"
+    },
+    {
+      "name": "vendor prefix",
+      "foreground": "#c1c0c0",
+      "token": "support.type.vendor-prefix.css"
+    },
+    {
+      "name": "Function name",
+      "foreground": "#a9dc76",
+      "token": "support.function"
+    },
+    {
+      "name": "function brackets, comma's",
+      "foreground": "#939293",
+      "token": "support.function.delimiter.elm"
+    },
+    {
+      "name": "Library type",
+      "fontStyle": "italic",
+      "foreground": "#78dce8",
+      "token": "support.type"
+    },
+    {
+      "name": "Library type",
+      "fontStyle": "italic",
+      "foreground": "#78dce8",
+      "token": "entity.name.type.object.console"
+    },
+    {
+      "name": "Support variables",
+      "foreground": "#78dce8",
+      "token": "support.variable"
+    },
+    {
+      "name": "Library type property",
+      "fontStyle": "normal",
+      "foreground": "#2e3440",
+      "token": "support.type.property-name"
+    },
+    {
+      "name": "Library class",
+      "foreground": "#78dce8",
+      "token": "support.class"
+    },
+    {
+      "name": "rust specific",
+      "foreground": "#ab9df2",
+      "token": "support.constant.core.rust"
+    },
+    {
+      "name": "text",
+      "foreground": "#2e3440",
+      "token": "text"
+    },
+    {
+      "name": "Search result",
+      "foreground": "#2e3440",
+      "token": "text.find-in-files"
+    },
+    {
+      "name": "Variable",
+      "foreground": "#2e3440",
+      "token": "variable"
+    },
+    {
+      "name": "Variable",
+      "foreground": "#2e3440",
+      "token": "variable.other"
+    },
+    {
+      "name": "Function arguments",
+      "fontStyle": "italic",
+      "foreground": "#fc9867",
+      "token": "variable.parameter"
+    },
+    {
+      "name": "Function arguments",
+      "fontStyle": "italic",
+      "foreground": "#fc9867",
+      "token": "parameters variable.function"
+    },
+    {
+      "name": "Reserved variable names that are specified by the language, such as this, self, super, arguments. Also in function arguments (e.g. like in Python)",
+      "fontStyle": "italic",
+      "foreground": "#c1c0c0",
+      "token": "variable.language"
+    },
+    {
+      "name": "Reserved variable names that are specified by the language, such as this, self, super, arguments. Also in function arguments (e.g. like in Python)",
+      "fontStyle": "italic",
+      "foreground": "#c1c0c0",
+      "token": "variable.parameter.function.language.special.self.python"
+    },
+    {
+      "name": "Reserved variable names that are specified by the language, such as this, self, super, arguments. Also in function arguments (e.g. like in Python)",
+      "fontStyle": "italic",
+      "foreground": "#c1c0c0",
+      "token": "variable.parameter.function.language.special.cls.python"
+    },
+    {
+      "name": "Reserved variable names: 'arguments'",
+      "foreground": "#ab9df2",
+      "token": "variable.language.arguments"
+    },
+    {
+      "name": "Library function",
+      "foreground": "#78dce8",
+      "token": "variable.other.class"
+    },
+    {
+      "name": "Immutable variables, often via a const modifier, should receive the following scope. Depending on the language and semantics, entity.name.constant may be a better choice.",
+      "foreground": "#ab9df2",
+      "token": "variable.other.constant"
+    },
+    {
+      "name": "read/write variables",
+      "foreground": "#2e3440",
+      "token": "variable.other.readwrite"
+    },
+    {
+      "name": "Fields, properties, members and attributes of a class or other data structure should use:",
+      "foreground": "#2e3440",
+      "token": "variable.other.member"
+    },
+    {
+      "name": "Enum member",
+      "foreground": "#ab9df2",
+      "token": "variable.other.enummember"
+    },
+    {
+      "name": "Variable property",
+      "foreground": "#2e3440",
+      "token": "variable.other.property"
+    },
+    {
+      "name": "Variable property",
+      "foreground": "#2e3440",
+      "token": "variable.other.property.static"
+    },
+    {
+      "name": "Variable property",
+      "foreground": "#2e3440",
+      "token": "variable.other.event"
+    },
+    {
+      "name": "Function and method names should be scoped using the following, but only when they are being invoked. When defined, they should use entity.name.function.",
+      "foreground": "#a9dc76",
+      "token": "variable.function"
+    },
+    {
+      "name": "Substitution (restructured text)",
+      "foreground": "#fc9867",
+      "token": "variable.other.substitution"
+    },
+    {
+      "name": "Ruby instance variables",
+      "foreground": "#ab9df2",
+      "token": "source.ruby variable.other.readwrite.instance.ruby"
+    },
+    {
+      "name": "Ruby instance variables",
+      "foreground": "#ab9df2",
+      "token": "source.ruby variable.other.readwrite.class.ruby"
+    },
+    {
+      "name": "jinja2 variable block",
+      "foreground": "#a9dc76",
+      "token": "source.jinja2 variable.other.jinja2.block"
+    },
+    {
+      "name": "jinja2 variable",
+      "foreground": "#fc9867",
+      "token": "source.jinja2 variable.other.jinja2"
+    }
+  ],
+  "encodedTokensColors": []
+}
