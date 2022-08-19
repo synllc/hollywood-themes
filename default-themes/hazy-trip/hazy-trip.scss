@@ -332,6 +332,8 @@ $ux-uisettings-entry-bg-select: skyblue;
 #nav_settings { @include nav-icon('./style/default-themes/hazy-trip/icons/nav-settings.png'); }
 #nav_settings-engine { @include nav-icon('./style/default-themes/hazy-trip/icons/nav-explorer.png'); }
 #nav_powertools { @include nav-icon('./style/default-themes/hazy-trip/icons/nav-tools.png'); }
+#nav_theming { @include nav-icon('https://i.imgur.com/E053xZR.png'); }
+// just add it in style/defaultthemes/hazytrips/icons i guess instead of using imgur louka, it was a test
 
 #nav_bar {
     position: relative;
