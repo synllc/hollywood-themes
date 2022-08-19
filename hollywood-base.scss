@@ -320,9 +320,11 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 
 .sidebar {
 	overflow-y: auto;
-	transition: 157ms max-width;
+	transition: 157ms max-width, 157ms min-width;
 	max-width: 20em;
+	min-width: 11.5em;
 	&.hidden {
+		min-width: 0;
 		max-width: 0em;
 	}
 }
