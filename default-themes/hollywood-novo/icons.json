@@ -8,5 +8,11 @@
     "btn-clear": "ic:baseline-clear",
     "btn-file-open": "ic:baseline-upload-file",
     "btn-file-execute": "ic:baseline-settings",
-    "btn-file-save": "ic:baseline-save"
+    "btn-file-save": "ic:baseline-save",
+
+    "page-editor": "ic:sharp-code",
+    "page-customization": "ic:sharp-brush",
+    "page-settings-engine": "ic:sharp-games",
+    "page-powertools": "ic:sharp-auto-awesome",
+    "page-settings": "ic:sharp-settings"
 }
