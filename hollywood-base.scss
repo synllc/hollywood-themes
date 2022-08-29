@@ -664,6 +664,11 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 	&.updated { @include authority(lightgreen); }
 }
 
+.documentation-view {
+	width: 100%;
+	height: 100%;
+}
+
 /* === OLD CSS BELOW === */
 /* ==================================================================================================== */
 
