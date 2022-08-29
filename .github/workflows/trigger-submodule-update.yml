@@ -26,5 +26,5 @@ jobs:
               owner: 'synllc',
               repo: 'hollywood',
               workflow_id: 'update-submodules.yml',
-              ref: 'master'
+              ref: 'main'
             });
