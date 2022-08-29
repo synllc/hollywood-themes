@@ -1,0 +1,30 @@
+name: Trigger submodule update
+
+on:
+  push:
+    branches:
+    - master
+    paths-ignore:
+    - .github/workflows/*.yml
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get installation access token for other repos
+        uses: jnwng/github-app-installation-token-action@c54add4c02866dc41e106745ac6dcf5cdd6339e5
+        id: installation-token
+        with:
+          appId: 210197
+          installationId: 26474619
+          privateKey: ${{ secrets.GH_APP_PRIVATE_KEY }}
+      - uses: actions/github-script@7a5c598405937d486b0331594b5da2b14db670da
+        with:
+          github-token: ${{ steps.installation-token.outputs.token }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'synllc',
+              repo: 'hollywood',
+              workflow_id: 'update-submodules.yml',
+              ref: 'master'
+            });
