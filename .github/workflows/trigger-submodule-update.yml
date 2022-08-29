@@ -15,9 +15,9 @@ jobs:
         uses: jnwng/github-app-installation-token-action@c54add4c02866dc41e106745ac6dcf5cdd6339e5
         id: installation-token
         with:
-          appId: 210197
-          installationId: 26474619
-          privateKey: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          appId: 232904
+          installationId: 28710536
+          privateKey: ${{ secrets.HW_APP_PRIVATE_KEY }}
       - uses: actions/github-script@7a5c598405937d486b0331594b5da2b14db670da
         with:
           github-token: ${{ steps.installation-token.outputs.token }}
