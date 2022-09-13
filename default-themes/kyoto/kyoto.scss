@@ -167,3 +167,7 @@ $ux-uisettings-entry-bg-select: skyblue;
 #ban_logo {
     background-image: url('assets/logo_white.svg');
 }
+
+#nav_bar.vertical .nav_entry.selected {
+    background-color: adjust-color($ui-bg-color, $lightness: 5%);
+}
