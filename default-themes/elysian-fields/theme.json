@@ -2,6 +2,6 @@
     "id": "elysian-fields",
     "name": "Elysian Fields",
     "stylesheet": true,
-    "editor": "vs",
+    "editor": "custom",
     "invertconsole": true
 }
