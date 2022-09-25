@@ -200,3 +200,7 @@ $ux-uisettings-entry-bg-select: #2c7192;
 #nav_bar.vertical .nav_entry.selected {
     background-color: adjust-color($ui-bg-color, $lightness: 5%);
 }
+
+#ban_control_feedback {
+    color: #000000
+}
