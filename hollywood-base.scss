@@ -1737,8 +1737,11 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 /* ================================================== */
 
 .page_container {
+	position: absolute;
 	user-select: none;
-	display: none;
+	display: flex;
+	opacity: 0;
+	pointer-events: none;
 	height: 100%;
 	width: 100%;
 	overflow: scroll;
@@ -1761,7 +1764,8 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 	&.noscroll { overflow: hidden; overflow-x: hidden; overflow-y: hidden; }
 
 	&.visible {
-		display: flex;
+		opacity: 100%;
+		pointer-events: all;
 	}
 
 }
