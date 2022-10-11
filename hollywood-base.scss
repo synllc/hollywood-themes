@@ -738,6 +738,7 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 		width: 20em;
 		opacity: 0;
 		transition: 157ms opacity;
+		pointer-events: all;
 
 		&.show {
 			opacity: 100%;
@@ -755,6 +756,7 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 
 			.task {
 				position: relative;
+				cursor: pointer;
 
 				.contents {
 					display: flex;
