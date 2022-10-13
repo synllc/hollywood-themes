@@ -928,11 +928,6 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 }
 
 .ux_button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 5px;
-
 	border: none;
 	border-radius: 4px;
 	box-shadow: 0px 2px 4px rgba(0,0,0,.1);
