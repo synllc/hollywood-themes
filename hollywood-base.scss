@@ -127,120 +127,12 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 		border-bottom-width: 2px;
 	}
 
-	.information-view {
-		display: flex;
-		flex-direction: column;
-		cursor: pointer;
-
-		border-bottom-style: solid;
-		border-bottom-width: 2px;
-
-		.bar {
-			display: flex;
-			align-items: center;
-			padding: 0.5em;
-			gap: 0.3em;
-
-			.iconify {
-				font-size: 1.2em;
-			}
-
-			.count {
-				border-radius: 9999px;
-				padding: 0.1em;
-				background-color: white;
-				color: black;
-			}
-
-			.chevron {
-				margin-left: auto;
-			}
-		}
-
-		.contents {
-			display: flex;
-			flex-direction: column;
-
-			.information {
-				display: flex;
-				align-items: center;
-				padding: 0.5em;
-				gap: 0.5em;
-
-				&:nth-child(odd) {
-					background-color: rgba(0, 0, 0, 0.3);
-				}
-
-				.iconify {
-					font-size: 1.5em;
-				}
-
-				.text {
-					display: flex;
-					flex-direction: column;
-
-					.title {
-						font-weight: bold;
-					}
-				}
-			}
-		}
-	}
-
 	.action-bar {
-		display: flex;
-		align-items: center;
-		box-sizing: border-box;
-		width: 100%;
-		padding: 0.3em;
-	
-		&.flip {
-			flex-direction: row-reverse;
-
-			#no-targets-warning {
-				flex-direction: row-reverse;
-
-				.text {
-					opacity: 0;
-					transition: 157ms opacity, 157ms transform;
-					transform: translateX(calc(-90% + 0.2em));
-					font-size: 0.75em;
-					white-space: nowrap;
-					position: absolute;
-					left: -2em;
-				}
-	
-				&:hover {
-					.text {
-						opacity: 1;
-						transform: translateX(calc(-90%));
-					}
-				}
-			}
-
-			.action-list {
-				margin-left: 0;
-				margin-right: auto;
-			}
-
-			.colorspace {
-				padding-right: 5px;
-				padding-left: 0px;
-			}
-		}
-	
-		.action-list {
-			display: flex;
-			margin-left: auto;
-			align-items: center;
-		}
-	
 		.action-button {
 			display: flex;
 			font-size: 1.5em;
 			cursor: pointer;
 			transition: transform 0.1s;
-			
 	
 			&.unclickable {
 				cursor: default;
@@ -280,42 +172,6 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 				.text {
 					opacity: 1;
 					transform: translateX(0);
-				}
-			}
-		}
-	
-		.colorspace {
-			display: flex;
-			//flex-grow: 2;
-			align-items: center;
-			height: 100%;
-			//width: 200px;
-			padding-left: 5px;
-			gap: 5px;
-	
-			.target {
-				padding: 0.2em;
-				width: 1em;
-				height: 1em;
-				font-size: 100%;
-				border-radius: 14px;
-				cursor: pointer;
-				color: transparent;
-				white-space: nowrap;
-				text-overflow: ellipsis;
-			
-				&:hover {
-					width: fit-content;
-					color: black;
-					filter: brightness(85%);
-				}
-			
-				&:active {
-					filter: brightness(50%);
-				}
-			
-				.text {
-					font-size: 12px;
 				}
 			}
 		}
