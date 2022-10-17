@@ -1303,10 +1303,11 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 	pointer-events: none;
 	opacity: 0;
 
-	transition: 157ms background-color;
+	transition: 157ms opacity;
+
+	background-color: rgba(0,0,0,.5);
 
 	&.show {
-		background-color: rgba(0,0,0,.5);
 		opacity: 100%;
 		.bar {
 			transform: translateX(0%);
@@ -1314,42 +1315,25 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 	}
 
 	.bar {
-		display: flex;
-		flex-direction: column;
-		//justify-content: center;
+		@apply flex flex-col h-full w-fit pointer-events-auto z-50 box-border overflow-y-scroll backdrop-blur-sm;
+
 		-webkit-app-region: no-drag;
-		height: 100%;
-		width: 150px;
 		transform: translateX(-100%);
-		pointer-events: all;
 		transition: 157ms transform;
-		z-index: 900;
-		background-color: rgb(26, 26, 26);
-		box-sizing: border-box;
-		overflow-y: scroll;
+		background-color: rgba(26, 26, 26, 50%);
 
 		.language {
-			padding: 0.5em 1em;
-			display: flex;
-			align-items: center;
-			gap: 0.5em;
-			cursor: pointer;
-
+			@apply flex items-center gap-2 px-4 py-2 cursor-pointer hover:brightness-125 active:opacity-50;
 			.iconify {
-				font-size: 1.5em;
+				@apply text-xl;
 			}
 
 			.name {
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				overflow: hidden;
+				@apply overflow-ellipsis whitespace-nowrap overflow-hidden;
 			}
 
 			.flag {
-				display: flex;
-				align-items: center;
-				margin-left: auto;
-
+				@apply flex items-center ml-auto;
 				img {
 					width: 1.2em;
 					height: 1.2em;
