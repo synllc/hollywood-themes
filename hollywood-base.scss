@@ -55,6 +55,11 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 	100% { transform: translateY(-0.2em); opacity: 0 }
 }
 
+@keyframes elem-blur-in {
+	0% { transform: scale(90%); opacity: 0; filter: blur(2px); }
+	100% { transform: scale(100%); opacity: 100%; filter: blur(0px); }
+}
+
 
 /* ==================================================================================================== */
 // REST
@@ -1173,98 +1178,6 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 	}
 }
 
-#ux_dialog_wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	font-family: $ux-font;
-	background-color: transparent;
-	transition: 0.3s background-color;
-
-	top: 0;
-	left: 0;
-
-	z-index: 300;
-	user-select: none;
-	pointer-events: none;
-
-	&.show {
-		background-color: rgba(0, 0, 0, 50%);
-		pointer-events: all;
-	}
-
-	.ux_dialog {
-		display: flex;
-		flex-direction: column;
-		pointer-events: all;
-		z-index: 101;
-		width: 40%;
-
-		border: 1px solid grey;
-		border-radius: 8px;
-		transform: translateY(1em);
-		transition: 157ms transform, 157ms opacity;
-		opacity: 0%;
-
-		&.show {
-			transform: translateY(0);
-			opacity: 100%;
-		}
-	
-		.title {
-			display: flex;
-			padding: 0.5em;
-			font-size: 1.2em;
-			gap: 0.5em;
-			align-items: center;
-
-			border-top-left-radius: 8px;
-			border-top-right-radius: 8px;
-
-			.icon {
-				font-size: 1.5em;
-			}
-	
-			.iconify {
-				margin-left: auto;
-			}
-		}
-	
-		.contents {
-			display: flex;
-			flex-direction: column;
-			gap: 1em;
-			padding: 1em;
-		}
-
-		.img {
-			display: flex;
-			flex-direction: column;
-			gap: 1em;
-			padding: 1em;
-			align-items: center;
-		}
-	
-		.actions {
-			display: flex;
-			justify-content: end;
-			padding: 1em;
-			gap: 1em;
-
-			border-bottom-left-radius: 8px;
-			border-bottom-right-radius: 8px;
-		}
-
-		.ux_textbox_container {
-			//margin-right: 2em; // troll fix
-		}
-	}
-}
-
 /* --- BANNER BAR --- */
 /* ================================================== */
 
@@ -1504,7 +1417,6 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	cursor: pointer;
 
 	&.disabled {
 		opacity: 50%;
