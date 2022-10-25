@@ -1982,6 +1982,26 @@ $ux-font: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
 
 			.contents {
 				user-select: text;
+
+				table {
+					@apply table-auto border border-white border-collapse;
+
+					thead {
+						tr {
+							th {
+								@apply p-1 bg-zinc-800 border border-zinc-700;
+							}
+						}
+					}
+
+					tbody {
+						tr {
+							td {
+								@apply p-1 bg-zinc-900 border border-zinc-800;
+							}
+						}
+					}
+				}
 			}
 
 			.count {
