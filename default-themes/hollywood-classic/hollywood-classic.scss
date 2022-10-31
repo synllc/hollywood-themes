@@ -170,6 +170,6 @@ $ux-uisettings-entry-bg-select: skyblue;
     }
 }
 
-ban_bar { // ty sparkley adjust color $ui-bg-color to be darker by 5%
+#ban_bar { // ty sparkley adjust color $ui-bg-color to be darker by 5%
     background: adjust-color($ui-bg-color, $lightness: -5%);
 }
