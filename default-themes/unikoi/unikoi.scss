@@ -163,3 +163,7 @@ $ux-uisettings-entry-bg-select: #d8dce5;
 .ux_button {
     border: 1px solid $ui-bg-color;
 }
+
+#ban_bar { // ty sparkley adjust color $ui-bg-color to be darker by 5%
+    background: adjust-color($ui-bg-color, $lightness: -5%);
+}
