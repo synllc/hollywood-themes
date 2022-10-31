@@ -179,3 +179,11 @@ $ux-uisettings-entry-bg-select: #486a9c;
 #ban_control_feedback {
     color: #000000
 }
+
+#ban_bar { // adjust color $ui-bg-color to be darker by 5%
+    background: adjust-color($ui-bg-color, $lightness: -5%);
+}
+
+.text-yellow-400 {
+    color: rgb(0 0 0 / var(--tw-text-opacity))
+}
