@@ -168,3 +168,11 @@ $ux-uisettings-entry-bg-select: #aea4f6;
 #nav_bar.vertical .nav_entry.selected {
     background-color: adjust-color($ui-bg-color, $lightness: 5%);
 }
+
+#ban_bar { // adjust color $ui-bg-color to be darker by 5%
+    background: $ui-bg-color
+}
+
+.text-yellow-400 {
+    color: rgb(249 251 253 / var(--tw-text-opacity))
+}
