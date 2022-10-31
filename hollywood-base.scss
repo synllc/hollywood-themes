@@ -85,18 +85,18 @@ $hw-tasks-task-failure: $hw-red !default;
 /* -------------- Control colors --------------  */
 
 // Buttons.
-$hw-button-bg:  $hw-base !default;               // Can also be a gradient if desired.
+$hw-button-bg:  linear-gradient(to bottom, adjust-color($hw-base, $lightness: 2), $hw-base) !default;               // Can also be a gradient if desired.
 $hw-button-text: $hw-text !default;
 $hw-button-border: none !default;                // Sets the 'border' property.
-$hw-button-shadow: none !default;                // Sets the 'box-shadow' property.
+$hw-button-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.3) !default;                // Sets the 'box-shadow' property.
 $hw-button-bg-hover: $hw-layer1 !default;
 $hw-button-text-hover: $hw-text !default;
 $hw-button-border-hover: none !default;
-$hw-button-shadow-hover: none !default;
+$hw-button-shadow-hover: $hw-button-shadow;
 $hw-button-bg-active: $hw-bg !default;
 $hw-button-text-active: $hw-text-sub !default;
 $hw-button-border-active: none !default;
-$hw-button-shadow-active: none !default;
+$hw-button-shadow-active: $hw-button-shadow;
 
 // Textboxes.
 $hw-textbox-bg: $hw-base !default;
