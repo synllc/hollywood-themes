@@ -202,3 +202,7 @@ $ux-uisettings-entry-bg-select: red;
 .module-caption {
     border: 2px solid red;
 }
+
+#ban_bar { // ty sparkley adjust color $ui-bg-color to be darker by 5%
+    background: adjust-color($ui-bg-color, $lightness: -5%);
+}
