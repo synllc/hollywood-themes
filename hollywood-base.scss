@@ -5,8 +5,11 @@
 // Hollywood color stylesheet.
 // These colors match "Hollywood Dark".
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* -------------- Base colors --------------  */
 
+$hw-bg-deep:    #1a1818 !default;    // When you need an extra level of depth.
 $hw-bg:         #1c1917 !default;    // For vast background elements (i.e. page containers).
 $hw-base:       #292524 !default;    // For generic background elements (i.e. buttons and textboxes).
 $hw-layer1:     #44403c !default;    // For captions on dialogs and other imposed text labels.
@@ -26,7 +29,7 @@ $hw-green-dark: #15803d !default;
 $hw-blue:       #38bdf8 !default;    // Notifications and messages.
 $hw-blue-dark:  #0369a1 !default;
 
-$hw-primary:    $hw-blue !default;      // Primary accent color used everywhere in the UI.
+$hw-primary:    $hw-blue-dark !default;      // Primary accent color used everywhere in the UI.
 
 /* -------------- Main interface colors --------------  */
 
@@ -105,15 +108,10 @@ $hw-textbox-icon: $hw-text !default;
 
 // Checkboxes.
 $hw-checkbox-bg: $hw-base !default;
-$hw-checkbox-icon: transparent !default;
-$hw-checkbox-border: $hw-layer1 !default;
-$hw-checkbox-shadow: none !default;
+$hw-checkbox-icon: $hw-layer1 !default;
 $hw-checkbox-bg-on: $hw-primary !default;    // Background when the checkbox is checked.
-$hw-checkbox-icon-on: $hw-text !default;     // Icon when the checkbox is checked.
-$hw-checkbox-border-on: $hw-text !default;   // Border when the checkbox is checked.
-$hw-checkbox-shadow-on: none !default;       // Shadow when the checkbox is checked.
-$hw-checkbox-caption-text: $hw-text !default;
-$hw-checkbox-caption-subtext: $hw-text-sub !default;
+$hw-checkbox-icon-on: $hw-primary !default;     // Icon when the checkbox is checked.
+$hw-checkbox-shadow: none !default;
 
 // Dropdowns.
 $hw-dropdown-bg: $hw-base !default;
@@ -136,14 +134,17 @@ $hw-contextmenu-icon-select: $hw-text !default;
 $hw-contextmenu-shadow: none !default;
 
 // Page list.
-$hw-pagelist: $hw-base !default;
-$hw-pagelist-button-bg: transparent !default;
-$hw-pagelist-button-text: $hw-text !default;
-$hw-pagelist-button-subtext: $hw-text-sub !default;
-$hw-pagelist-accent: $hw-primary !default;
-$hw-pagelist-icon: $hw-text !default;
-$hw-pagelist-button-bg-hover: $hw-layer1 !default;
-$hw-pagelist-button-bg-select: adjust-color($hw-primary, $alpha: -0.5) !default;
+$hw-multimenu: $hw-bg !default;
+$hw-multimenu-pages: $hw-bg-deep !default;
+$hw-multimenu-list-shadow: 0.2rem 0 0.5rem rgba(0, 0, 0, 0.4) !default !default;
+$hw-multimenu-button-bg: $hw-base !default;
+$hw-multimenu-button-text: $hw-text !default;
+$hw-multimenu-button-subtext: $hw-text-sub !default;
+$hw-multimenu-button-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.3) !default;
+$hw-multimenu-accent: $hw-primary !default;
+$hw-multimenu-icon: $hw-text !default;
+$hw-multimenu-button-bg-hover: $hw-layer1 !default;
+$hw-multimenu-button-bg-select: adjust-color($hw-layer1, $alpha: -0.5) !default;
 
 /* -------------- Editor colors --------------  */
 
@@ -305,26 +306,17 @@ $hw-editor-shadow-active: none !default;
 }
 
 .hw-checkbox {
-    .box {
-        color: $hw-checkbox-icon;
-        background: $hw-checkbox-bg;
-        border: $hw-checkbox-border;
-        box-shadow: $hw-checkbox-shadow;
-    }
+    background: $hw-checkbox-bg;
+    box-shadow: $hw-checkbox-shadow;
 
-    .caption {
-        color: $hw-checkbox-caption-text;
-        .sub {
-            color: $hw-checkbox-caption-subtext;
-        }
+    .icon {
+        color: $hw-checkbox-icon;
     }
 
     &.on {
-        .box {
-            color: $hw-checkbox-bg-on;
-            background: $hw-checkbox-bg-on;
-            border: $hw-checkbox-border-on;
-            box-shadow: $hw-checkbox-shadow-on;
+        background: $hw-checkbox-bg-on;
+        .icon {
+            color: $hw-checkbox-icon-on;
         }
     }
 }
@@ -356,9 +348,12 @@ $hw-editor-shadow-active: none !default;
     background: $hw-slider-bg;
 
     input[type="range"] {
+        background: transparent;
         -webkit-appearance: none;
         
         &::-webkit-slider-runnable-track {
+            -webkit-appearance: none;
+            @apply h-1/2 rounded-md bg-inherit;
             background: $hw-slider-bar;
         }
 
@@ -503,6 +498,43 @@ $hw-editor-shadow-active: none !default;
 	}
 }
 
+// Multimenu.
+
+.hw-multimenu {
+    .list {
+        background: $hw-multimenu;
+        box-shadow: $hw-multimenu-list-shadow;
+
+        .entry {
+            color: $hw-multimenu-button-text;
+            background: $hw-multimenu-button-bg;
+            box-shadow: $hw-multimenu-button-shadow;
+
+            &::before {
+                background: $hw-multimenu-accent;
+            }
+
+            &:hover {
+                background: $hw-multimenu-button-bg-hover;
+            }
+
+            &.select, &:active {
+                background: $hw-multimenu-button-bg-select;
+            }
+        }
+    }
+
+    .pages {
+        background: $hw-multimenu-pages;
+
+        .page {
+            .category-label {
+                background: $hw-base;
+            }
+        }
+    }
+}
+
 // Default logo.
 #titlebar-logo {
     background-image: url('../assets/logo_white.svg');
@@ -510,9 +542,16 @@ $hw-editor-shadow-active: none !default;
 
 // Generic tag colorization.
 html, body {
-    @apply flex flex-col p-0 m-0 h-full w-full;
+    @apply flex flex-col p-0 m-0 h-full w-full text-[0.9rem];
     color: $hw-text;
     background: $hw-bg;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.font {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
 }
 
 a {
