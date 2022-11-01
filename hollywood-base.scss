@@ -54,25 +54,25 @@ $hw-navigation-label-shadow: none !default;      // Note: This sets the 'box-sha
 
 // Dialogs. Icon color is custom per dialog, so
 // a default cannot be set here.
-$hw-dialog-bg: $hw-base !default;
+$hw-dialog-bg: $hw-bg-deep !default;
 $hw-dialog-text: $hw-text !default;
-$hw-dialog-shadow: none !default;
+$hw-dialog-shadow: 0 0rem 0.8rem rgba(0, 0, 0, 0.6) !default;
 $hw-dialog-caption: $hw-text !default;
-$hw-dialog-inputs-bg: $hw-layer1 !default;
+$hw-dialog-inputs-bg: $hw-base !default;
 
 // Changelog.
-$hw-changelog-bg: $hw-base !default;
+$hw-changelog-bg: $hw-bg !default;
 $hw-changelog-text: $hw-text !default;
-$hw-changelog-shadow: none !default;
-$hw-changelog-caption-bg: $hw-layer1 !default;
+$hw-changelog-shadow: $hw-dialog-shadow !default;
+$hw-changelog-caption-bg: $hw-base !default;
 $hw-changelog-caption-text: $hw-text !default;
 $hw-changelog-caption-icon: $hw-text !default;
 
 // Task reporter.
-$hw-tasks-bg: $hw-base !default;
+$hw-tasks-bg: $hw-bg !default;
 $hw-tasks-text: $hw-text !default;
-$hw-tasks-shadow: none !default;
-$hw-tasks-caption-bg: $hw-layer1 !default;
+$hw-tasks-shadow: $hw-dialog-shadow !default;
+$hw-tasks-caption-bg: $hw-base !default;
 $hw-tasks-caption-text: $hw-text !default;
 $hw-tasks-task-bg: transparent !default;
 $hw-tasks-task-text: $hw-text !default;
@@ -136,7 +136,7 @@ $hw-contextmenu-shadow: none !default;
 // Page list.
 $hw-multimenu: $hw-bg !default;
 $hw-multimenu-pages: $hw-bg-deep !default;
-$hw-multimenu-list-shadow: 0.2rem 0 0.5rem rgba(0, 0, 0, 0.4) !default !default;
+$hw-multimenu-list-shadow: 0.2rem 0 0.5rem rgba(0, 0, 0, 0.4) !default;
 $hw-multimenu-button-bg: $hw-base !default;
 $hw-multimenu-button-text: $hw-text !default;
 $hw-multimenu-button-subtext: $hw-text-sub !default;
@@ -192,6 +192,40 @@ $hw-editor-shadow-hover: none !default;
 $hw-editor-action-bg-active: $hw-text !default;
 $hw-editor-action-icon-active: $hw-text !default;
 $hw-editor-shadow-active: none !default;
+
+/* -------------- Animations --------------  */
+
+// Expected usage: animation: elem-{x} 157ms linear forwards;
+@keyframes elem-insert {
+	0% { transform: translateY(0.2em); opacity: 0 }
+	100% { transform: translateY(0); opacity: 100% }
+}
+
+@keyframes elem-remove {
+	0% { transform: translateY(0em); opacity: 100% }
+	100% { transform: translateY(0.2em); opacity: 0 }
+}
+
+// Ditto.
+@keyframes elem-insert-left {
+	0% { transform: translateX(-0.2em); opacity: 0 }
+	100% { transform: translateY(0); opacity: 100% }
+}
+
+@keyframes elem-remove-left {
+	0% { transform: translateX(0); opacity: 100% }
+	100% { transform: translateY(-0.2em); opacity: 0 }
+}
+
+@keyframes elem-blur-in {
+	0% { transform: scale(90%); opacity: 0; filter: blur(2px); }
+	100% { transform: scale(100%); opacity: 100%; filter: blur(0px); }
+}
+
+@keyframes elem-blur-out {
+	0% { transform: scale(100%); opacity: 100%; filter: blur(0px); }
+	100% { transform: scale(90%); opacity: 0; filter: blur(2px); }
+}
 
 /* -------------- Color applications --------------  */
 
@@ -382,6 +416,74 @@ $hw-editor-shadow-active: none !default;
     }
 }
 
+.hw-dialog {
+    color: $hw-dialog-text;
+    background: $hw-dialog-bg;
+    box-shadow: $hw-dialog-shadow;
+
+    .caption {
+        color: $hw-dialog-caption;
+    }
+
+    .inputs {
+        background: $hw-dialog-inputs-bg;
+    }
+}
+
+.hw-changelog {
+    color: $hw-changelog-text;
+    background: $hw-changelog-bg;
+    box-shadow: $hw-changelog-shadow;
+
+    .caption {
+        color: $hw-changelog-caption-text;
+        background: $hw-changelog-caption-bg;
+
+        .iconify {
+            color: $hw-changelog-caption-icon;
+        }
+    }
+}
+
+.hw-progress-view {
+    color: $hw-tasks-text;
+    background: $hw-tasks-bg;
+    box-shadow: $hw-tasks-shadow;
+
+    .caption {
+        color: $hw-tasks-caption-text;
+        background: $hw-tasks-caption-bg;
+    }
+
+    .task {
+        color: $hw-tasks-task-text;
+        background: $hw-tasks-task-bg;
+        box-shadow: $hw-tasks-task-shadow;
+
+        .subtext {
+            color: $hw-tasks-task-subtext;
+        }
+
+        &.in-progress {
+            .iconify {
+                color: $hw-tasks-task-inprogress;
+            }
+        }
+
+        &.complete {
+            .iconify {
+                color: $hw-tasks-task-complete;
+            }
+        }
+
+        &.failure {
+            .iconify {
+                color: $hw-tasks-task-failure;
+            }
+        }
+    }
+}
+
 // Editor and sidebar.
 .hw-editor-tab {
     color: $hw-editor-tab-caption;
@@ -563,6 +665,26 @@ a {
 }
 
 // Imports from previous stylesheet.
+
+.changelog-contents {
+	h1 {
+		@apply font-bold text-2xl;
+	}
+
+	h3 {
+		@apply font-bold text-xl;
+	}
+
+	h4 {
+		@apply font-bold text-lg;
+	}
+
+	ul {
+		@apply list-disc;
+		@apply pl-8;
+	}
+}
+
 /* --- LANGUAGE BAR --- */
 /* ================================================== */
 
