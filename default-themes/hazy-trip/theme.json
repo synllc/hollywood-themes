@@ -2,5 +2,5 @@
     "id": "hazy-trip",
     "name": "Hazy Trip",
     "stylesheet": true,
-    "editor": "synapse-light"
+    "editor": "custom"
 }
