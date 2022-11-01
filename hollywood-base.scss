@@ -5,7 +5,7 @@
 // Hollywood color stylesheet.
 // These colors match "Hollywood Dark".
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /* -------------- Base colors --------------  */
 
@@ -117,7 +117,7 @@ $hw-checkbox-shadow: none !default;
 $hw-dropdown-bg: $hw-base !default;
 $hw-dropdown-text: $hw-text !default;
 $hw-dropdown-chevron: $hw-text !default;     // Color of the arrow icon.
-$hw-dropdown-shadow: none !default;
+$hw-dropdown-shadow: $hw-dialog-shadow !default;
 
 // Sliders.
 $hw-slider-bg: transparent !default;
@@ -642,18 +642,15 @@ $hw-editor-shadow-active: none !default;
     background-image: url('../assets/logo_white.svg');
 }
 
-// Generic tag colorization.
 html, body {
     @apply flex flex-col p-0 m-0 h-full w-full text-[0.9rem];
     color: $hw-text;
     background: $hw-bg;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .font {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -665,6 +662,33 @@ a {
 }
 
 // Imports from previous stylesheet.
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: transparent gray;
+}
+
+*::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 15px;
+}
+
+*::-webkit-scrollbar-corner { 
+    background: transparent; 
+}
+
+*:focus {
+    outline: none;
+}
 
 .changelog-contents {
 	h1 {
