@@ -45,9 +45,9 @@ $hw-titlebar-control-bg-active: rgba(0, 0, 0,.7) !default;
 $hw-navigation-icon: $hw-text-sub !default;
 $hw-navigation-icon-shadow: none !default;       // Note: This sets the drop-shadow filter, not box-shadow.
 $hw-navigation-icon-hover: $hw-text !default;
-$hw-navigation-icon-select: $hw-text !default;
+$hw-navigation-icon-select: white !default;
 $hw-navigation-icon-accent: $hw-text !default;
-$hw-navigation-label-bg: $hw-base !default;
+$hw-navigation-label-bg: linear-gradient(to bottom, $hw-base, $hw-bg) !default;
 $hw-navigation-label-text: $hw-text !default;
 $hw-navigation-label-icon: $hw-text !default;
 $hw-navigation-label-shadow: none !default;      // Note: This sets the 'box-shadow' property.
@@ -275,7 +275,7 @@ $hw-editor-shadow-active: none !default;
 
         .label {
             color: $hw-navigation-label-text;
-            background-color: $hw-navigation-label-bg;
+            background: $hw-navigation-label-bg;
             box-shadow: $hw-navigation-label-shadow;
 
             .iconify {
@@ -294,6 +294,7 @@ $hw-editor-shadow-active: none !default;
 
         &.select {
             color: $hw-navigation-icon-select;
+            background: adjust-color($hw-layer1, $alpha: -0.5);
         }
     }
 }
