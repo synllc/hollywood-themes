@@ -126,12 +126,12 @@ $hw-slider-pin: $hw-primary !default;
 $hw-slider-caption: $hw-text !default;
 
 // Context menus.
-$hw-contextmenu-bg: $hw-base !default;
+$hw-contextmenu-bg: adjust-color($hw-bg, $alpha: -0.5) !default;
 $hw-contextmenu-text: $hw-text-sub !default;
 $hw-contextmenu-text-select: $hw-text !default;
 $hw-contextmenu-icon: $hw-text-sub !default;
 $hw-contextmenu-icon-select: $hw-text !default;
-$hw-contextmenu-shadow: none !default;
+$hw-contextmenu-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.3) !default;
 
 // Page list.
 $hw-multimenu: $hw-bg !default;
