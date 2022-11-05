@@ -140,7 +140,7 @@ $hw-multimenu-list-shadow: 0.2rem 0 0.5rem rgba(0, 0, 0, 0.4) !default;
 $hw-multimenu-button-bg: $hw-base !default;
 $hw-multimenu-button-text: $hw-text !default;
 $hw-multimenu-button-subtext: $hw-text-sub !default;
-$hw-multimenu-button-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.3) !default;
+$hw-multimenu-button-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3) !default;
 $hw-multimenu-accent: $hw-primary !default;
 $hw-multimenu-icon: $hw-text !default;
 $hw-multimenu-button-bg-hover: $hw-layer1 !default;
@@ -192,6 +192,9 @@ $hw-editor-shadow-hover: none !default;
 $hw-editor-action-bg-active: $hw-text !default;
 $hw-editor-action-icon-active: $hw-text !default;
 $hw-editor-shadow-active: none !default;
+
+// Toolbar.
+$hw-editor-toolbar-border: $hw-base;
 
 /* -------------- Animations --------------  */
 
@@ -537,8 +540,12 @@ $hw-editor-shadow-active: none !default;
 	}
 
 	.information-view {
-		border-color: inherit;
+		border-color: $hw-editor-toolbar-border;
 	}
+
+    .target-bar {
+        border-color: $hw-editor-toolbar-border;
+    }
 
     .action-button {
         color: $hw-editor-action-icon;
@@ -622,6 +629,10 @@ $hw-editor-shadow-active: none !default;
             }
 
             &.select, &:active {
+                @media (max-width: 1024px) {
+                    box-shadow: 0 0 0.5rem $hw-multimenu-accent;
+                    background-color: $hw-multimenu-accent;
+                }
                 background: $hw-multimenu-button-bg-select;
             }
         }
@@ -764,3 +775,69 @@ a {
 		}
 	}
 }
+
+/*
+ * react-circular-progressbar styles
+ * All of the styles in this file are configurable!
+ */
+
+ .CircularProgressbar {
+    /*
+     * This fixes an issue where the CircularProgressbar svg has
+     * 0 width inside a "display: flex" container, and thus not visible.
+     */
+    width: 100%;
+    /*
+     * This fixes a centering issue with CircularProgressbarWithChildren:
+     * https://github.com/kevinsqi/react-circular-progressbar/issues/94
+     */
+    vertical-align: middle;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-path {
+    stroke: #3e98c7;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease 0s;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-trail {
+    stroke: #d6d6d6;
+    /* Used when trail is not full diameter, i.e. when props.circleRatio is set */
+    stroke-linecap: round;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-text {
+    fill: #3e98c7;
+    font-size: 20px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-background {
+    fill: #d6d6d6;
+  }
+  
+  /*
+   * Sample background styles. Use these with e.g.:
+   *
+   *   <CircularProgressbar
+   *     className="CircularProgressbar-inverted"
+   *     background
+   *     percentage={50}
+   *   />
+   */
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
+    fill: #3e98c7;
+  }
+  
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
+    fill: #fff;
+  }
+  
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
+    stroke: #fff;
+  }
+  
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
+    stroke: transparent;
+  }
