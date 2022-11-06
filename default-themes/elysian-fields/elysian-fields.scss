@@ -20,12 +20,12 @@
 /* -------------- Base colors --------------  */
 
 $hw-bg-deep:    white !default;    // When you need an extra level of depth.
-$hw-bg:         white !default;    // For vast background elements (i.e. page containers).
-$hw-base:       white !default;    // For generic background elements (i.e. buttons and textboxes).
-$hw-layer1:     white !default;    // For captions on dialogs and other imposed text labels.
-$hw-layer2:     white !default;    // Extra shade for additional layering if needed.
-$hw-layer3:     white !default;    // Extra shade for additional layering if needed.
-$hw-layer4:     white !default;    // Extra shade for additional layering if needed.
+$hw-bg:         #FFFFFF !default;    // For vast background elements (i.e. page containers).
+$hw-base:       #FDFDFD !default;    // For generic background elements (i.e. buttons and textboxes).
+$hw-layer1:     #FAFAFA !default;    // For captions on dialogs and other imposed text labels.
+$hw-layer2:     #F5F5F5 !default;    // Extra shade for additional layering if needed.
+$hw-layer3:     #EAEAEA !default;    // Extra shade for additional layering if needed.
+$hw-layer4:     #E5E5E5 !default;    // Extra shade for additional layering if needed.
 
 $hw-text:       black !default;    // Generic text color.
 $hw-text-sub:   grey !default;    // Text color for "less important" inline text.

@@ -1,9 +1,0 @@
-{
-    "id": "scarlet",
-    "name": "Scarlet",
-    "stylesheet": true,
-    "editor": "synapse-dark",
-    "settingOverrides": {
-        "navbarstyle": 0
-    }
-}

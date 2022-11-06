@@ -16,150 +16,193 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-/* ==== Color Palette ==== */
+/* -------------- Base colors --------------  */
 
-$color-primary: #005fb7;
-$color-success: #0f7b0f;
-$color-warning: #f19100;
-$color-danger: #c42b1c;
-$color-info: #8a8a8a;
-$color-primary-light: adjust-color($color-primary, $lightness: 15%);
+$hw-bg-deep:    #1E1C1F !default;    // When you need an extra level of depth.
+$hw-bg:         #211F22 !default;    // For vast background elements (i.e. page containers).
+$hw-base:       #353336 !default;    // For generic background elements (i.e. buttons and textboxes).
+$hw-layer1:     #474648 !default;    // For captions on dialogs and other imposed text labels.
+$hw-layer2:     #585759 !default;    // Extra shade for additional layering if needed.
+$hw-layer3:     #78716c !default;    // Extra shade for additional layering if needed.
+$hw-layer4:     #676668 !default;    // Extra shade for additional layering if needed.
 
-/* ==== Global Colors ==== */
+$hw-text:       #d8dce5 !default;    // Generic text color.
+$hw-text-sub:   #a9a6a4 !default;    // Text color for "less important" inline text.
 
-$ui-tx-color: #d8dce5;	/* Default text color */
-$ui-bg-color: #211f22;		/* Default background color */
-$ui-link-color: $ui-tx-color;
+$hw-red:        #ef4444 !default;    // Errors and dangers.
+$hw-red-dark:   #b91c1c !default;    
+$hw-yellow:     #fbbf24 !default;    // Warnings and diagnostics.
+$hw-yellow-dark:#b45309 !default;    
+$hw-green:      #4ade80 !default;    // Successes and confirmations.
+$hw-green-dark: #15803d !default;    
+$hw-blue:       #38bdf8 !default;    // Notifications and messages.
+$hw-blue-dark:  #0369a1 !default;
 
-/* ==== Control Palette ==== */
+$hw-primary:    $hw-blue-dark !default;      // Primary accent color used everywhere in the UI.
 
-$ux-textbox-bg: #3d3b40;
-$ux-textbox-label: $ui-tx-color;
-$ux-textbox-text: $ui-tx-color;
-$ux-textbox-icon: $ui-tx-color;
+/* -------------- Main interface colors --------------  */
 
-$ux-button-bg: adjust-color($ui-bg-color, $lightness: 5%);
-$ux-button-bg-h: adjust-color($ui-bg-color, $lightness: 10%);
-$ux-button-bg-p: adjust-color($ui-bg-color, $lightness: -5%);
-$ux-button-label: $ui-tx-color;
+// Title bar.
+$hw-titlebar-bg: linear-gradient(to bottom, $hw-base, $hw-bg) !default;
+$hw-titlebar-text: $hw-text !default;
+$hw-titlebar-control: $hw-text !default;
+$hw-titlebar-control-bg: transparent !default;
+$hw-titlebar-control-bg-hover: rgba(0, 0, 0,.5) !default;
+$hw-titlebar-control-bg-active: rgba(0, 0, 0,.7) !default;
 
-$ux-checkbox-bg: adjust-color($ui-bg-color, $lightness: -2%);
-$ux-checkbox-icon: transparent;
-$ux-checkbox-border: 1px solid #9a9a9a;
-$ux-checkbox-checked-bg: #60cdff;
-$ux-checkbox-checked-icon: $ux-checkbox-bg;
-$ux-checkbox-label: $ux-button-label;
+// Navigation bar.
+$hw-navigation-icon: $hw-text-sub !default;
+$hw-navigation-icon-shadow: none !default;       // Note: This sets the drop-shadow filter, not box-shadow.
+$hw-navigation-icon-hover: $hw-text !default;
+$hw-navigation-icon-select: white !default;
+$hw-navigation-icon-accent: $hw-text !default;
+$hw-navigation-label-bg: linear-gradient(to bottom, $hw-base, $hw-bg) !default;
+$hw-navigation-label-text: $hw-text !default;
+$hw-navigation-label-icon: $hw-text !default;
+$hw-navigation-label-shadow: none !default;      // Note: This sets the 'box-shadow' property.
 
-$ux-dropdown-bg: $ux-textbox-bg;
-$ux-dropdown-text: $ux-textbox-label;
-$ux-dropdown-shadow: 0px 1px 5px rgba(0,0,0,30%);
+// Dialogs. Icon color is custom per dialog, so
+// a default cannot be set here.
+$hw-dialog-bg: $hw-bg-deep !default;
+$hw-dialog-text: $hw-text !default;
+$hw-dialog-shadow: 0 0rem 0.8rem rgba(0, 0, 0, 0.6) !default;
+$hw-dialog-caption: $hw-text !default;
+$hw-dialog-inputs-bg: $hw-base !default;
 
-$ux-context-bg: adjust-color($ui-bg-color, $alpha: -0.5);
-$ux-context-text: $ui-tx-color;
-$ux-context-shadow: 0px 1px 5px rgba(0,0,0,30%);
+// Changelog.
+$hw-changelog-bg: $hw-bg !default;
+$hw-changelog-text: $hw-text !default;
+$hw-changelog-shadow: $hw-dialog-shadow !default;
+$hw-changelog-caption-bg: $hw-base !default;
+$hw-changelog-caption-text: $hw-text !default;
+$hw-changelog-caption-icon: $hw-text !default;
 
-$ux-pagelist-button-bg: #2b2b2b;
-$ux-pagelist-button-hover-bg: #323232;
-$ux-pagelist-button-press-bg: #1d1d1d;
-$ux-pagelist-button-text: white;
-$ux-pagelist-details-text: white;
+// Task reporter.
+$hw-tasks-bg: $hw-bg !default;
+$hw-tasks-text: $hw-text !default;
+$hw-tasks-shadow: $hw-dialog-shadow !default;
+$hw-tasks-caption-bg: $hw-base !default;
+$hw-tasks-caption-text: $hw-text !default;
+$hw-tasks-task-bg: transparent !default;
+$hw-tasks-task-text: $hw-text !default;
+$hw-tasks-task-subtext: $hw-text-sub !default;
+$hw-tasks-task-shadow: none !default;
+$hw-tasks-task-inprogress: $hw-blue !default;
+$hw-tasks-task-complete: $hw-green !default;
+$hw-tasks-task-failure: $hw-red !default;
 
-/* ==== Error Wrapper ==== */
+/* -------------- Control colors --------------  */
 
-$ui-errw-text: white;
-$ui-errw-bg: rgba(0,0,0,.5);
-$ui-errw-icon: yellow;
+// Buttons.
+$hw-button-bg:  linear-gradient(to bottom, adjust-color($hw-base, $lightness: 2), $hw-base) !default;               // Can also be a gradient if desired.
+$hw-button-text: $hw-text !default;
+$hw-button-border: none !default;                // Sets the 'border' property.
+$hw-button-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.3) !default;                // Sets the 'box-shadow' property.
+$hw-button-bg-hover: $hw-layer1 !default;
+$hw-button-text-hover: $hw-text !default;
+$hw-button-border-hover: none !default;
+$hw-button-shadow-hover: $hw-button-shadow !default;
+$hw-button-bg-active: $hw-bg !default;
+$hw-button-text-active: $hw-text-sub !default;
+$hw-button-border-active: none !default;
+$hw-button-shadow-active: $hw-button-shadow !default;
 
-/* ==== Title Bar Palette ==== */
+// Textboxes.
+$hw-textbox-bg: $hw-base !default;
+$hw-textbox-text: $hw-text !default;
+$hw-textbox-caption: $hw-text !default;
+$hw-textbox-border: none !default;
+$hw-textbox-shadow: none !default;
+$hw-textbox-icon: $hw-text !default;
 
-$ui-ban-bg: $ui-bg-color;	/* Title bar bg color */
-$ui-ban-ver: white; /* Title bar version label color */
-$ui-ban-sup: gray; /* Title bar superscript label color */
+// Checkboxes.
+$hw-checkbox-bg: $hw-base !default;
+$hw-checkbox-icon: $hw-layer1 !default;
+$hw-checkbox-bg-on: $hw-primary !default;    // Background when the checkbox is checked.
+$hw-checkbox-icon-on: $hw-primary !default;     // Icon when the checkbox is checked.
+$hw-checkbox-shadow: none !default;
 
-$ui-ban-ctl-icon: white; /* Title bar control icon color */
-$ui-ban-ctl-bg-hover: rgba(0,0,0,.5); /* Title bar control icon background on hover */
-$ui-ban-ctl-bg-press: rgba(0,0,0,.7); /* Ditto, on press */
-$ui-ban-ctl-cbg-hover: rgb(212, 19, 36); /* Title bar close icon background on hover */
-$ui-ban-ctl-cbg-press: rgb(153, 15, 26); /* Ditto, on hover */
+// Dropdowns.
+$hw-dropdown-bg: $hw-base !default;
+$hw-dropdown-text: $hw-text !default;
+$hw-dropdown-chevron: $hw-text !default;     // Color of the arrow icon.
+$hw-dropdown-shadow: $hw-dialog-shadow !default;
 
-/* ==== Navigation Bar Palette ==== */
+// Sliders.
+$hw-slider-bg: transparent !default;
+$hw-slider-bar: $hw-base !default;
+$hw-slider-pin: $hw-primary !default;
+$hw-slider-caption: $hw-text !default;
 
-$ui-nav-bg: $ui-ban-bg; /* Nav bar bg color */
-$ui-nav-icon: $ui-tx-color; /* Nav icon color */
-$ui-nav-bg-ctl: rgb(86, 86, 86);	/* Title bar control color */
-$ui-nav-bg-sel: rgb(60, 60, 60);	/* Title select icon select/hover color */
-$ui-nav-ico-sel: $ui-tx-color;	/* Title icon select/hover color */
-$ui-nav-ico-rst: rgb(150, 150, 150);	/* Title icon unselect color */
-$ui-nav-lbl-bg: rgba(0, 0, 0, 30%);
-$ui-nav-lbl-txt: white;
-$ui-nav-lbl-shadow: 0px 1px 5px rgba(0,0,0,30%); /* Icon label bg shadow */
+// Context menus.
+$hw-contextmenu-bg: adjust-color($hw-bg, $alpha: -0.5) !default;
+$hw-contextmenu-text: $hw-text-sub !default;
+$hw-contextmenu-text-select: $hw-text !default;
+$hw-contextmenu-icon: $hw-text-sub !default;
+$hw-contextmenu-icon-select: $hw-text !default;
+$hw-contextmenu-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.3) !default;
 
-/* ==== Login ==== */
+// Page list.
+$hw-multimenu: $hw-bg !default;
+$hw-multimenu-pages: $hw-bg-deep !default;
+$hw-multimenu-list-shadow: 0.2rem 0 0.5rem rgba(0, 0, 0, 0.4) !default;
+$hw-multimenu-button-bg: $hw-base !default;
+$hw-multimenu-button-text: $hw-text !default;
+$hw-multimenu-button-subtext: $hw-text-sub !default;
+$hw-multimenu-button-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3) !default;
+$hw-multimenu-accent: $hw-primary !default;
+$hw-multimenu-icon: $hw-text !default;
+$hw-multimenu-button-bg-hover: $hw-layer1 !default;
+$hw-multimenu-button-bg-select: adjust-color($hw-layer1, $alpha: -0.5) !default;
 
-$ui-login-ctl-bg: rgba(0,0,0,.5); 
-$ui-login-corner-icon-color: $ui-tx-color;
+/* -------------- Editor colors --------------  */
 
-/* ==== Changelog UX ==== */
+// Tab.
+$hw-editor-tab-bg: transparent !default;
+$hw-editor-tab-caption: $hw-text-sub !default;
+$hw-editor-tab-icon: $hw-text-sub !default;
+$hw-editor-tab-close: $hw-text-sub !default;
+$hw-editor-tab-border: none !default;
+$hw-editor-tab-shadow: none !default;
+$hw-editor-tab-bg-select: $hw-base !default;
+$hw-editor-tab-caption-select: $hw-text !default;
+$hw-editor-tab-icon-select: $hw-text !default;
+$hw-editor-tab-close-select: $hw-text !default;
+$hw-editor-tab-border-select: none !default;
+$hw-editor-tab-shadow-select: 0 0rem 0.5rem rgba(0, 0, 0, 0.3) !default;
+$hw-editor-add-tab: $hw-text !default;
+$hw-editor-add-tab-bg: transparent !default;
 
-$ui-changelog-title-text: $ui-tx-color;
-$ui-changelog-content-text: lightgray;
+// Editor border/shadows. The rest of editor colors
+// must be defined in the "editor.json" file.
+$hw-editor-border-color: none !default;  // DOES NOT DEFINE THE BORDER PROPERTIES, only the color.
+$hw-editor-shadow-color: rgb(0 0 0 / 50%) !default;  // DOES NOT DEFINE THE SHADOW PROPERTIES, only the color.
 
-/* ==== Page UX ==== */
+// Sidebar.
+$hw-editor-sidebar-bg: $hw-base !default;
+$hw-editor-sidebar-entry-caption-bg: $hw-base !default;
+$hw-editor-sidebar-entry-caption-icon: $hw-text !default;
+$hw-editor-sidebar-entry-caption-chevron: $hw-text !default;
+$hw-editor-sidebar-entry-caption-text: $hw-text !default;
+$hw-editor-sidebar-node-bg: transparent !default;
+$hw-editor-sidebar-node-text: $hw-text !default;
+$hw-editor-sidebar-node-author: $hw-text-sub !default;
+$hw-editor-sidebar-node-icon: $hw-text !default;
+$hw-editor-sidebar-node-bg-hover: $hw-layer1 !default;
+$hw-editor-sidebar-node-bg-active: $hw-base !default;
 
-$ux-box-txt: white;
-$ux-box-bg: $ux-textbox-bg;
-$ux-box-border: none;
-$ux-box-shadow: 0px 1px 5px rgba(0,0,0,30%);
+// Action buttons.
+$hw-editor-action-bg: transparent !default;
+$hw-editor-action-icon: $hw-text !default;
+$hw-editor-shadow: none !default;
+$hw-editor-action-bg-hover: $hw-text !default;
+$hw-editor-action-icon-hover: $hw-text !default;
+$hw-editor-shadow-hover: none !default;
+$hw-editor-action-bg-active: $hw-text !default;
+$hw-editor-action-icon-active: $hw-text !default;
+$hw-editor-shadow-active: none !default;
 
-/* ==== Editor UX ==== */
-
-$ux-editor-tab-bg: transparent;
-$ux-editor-stab-bg: adjust-color($ui-bg-color, $lightness: 2%);
-$ux-editor-border-bg: adjust-color($ui-bg-color, $lightness: -5%);
-$ux-editor-file-category: adjust-color($ui-bg-color, $lightness: 5%);
-$ux-editor-file-category-text: white;
-$ux-editor-file-active-color: lightgray;
-$ux-editor-imgbutton-color: lightgray;
-$ux-editor-imgbutton-hover-color: white;
-
-/* ==== Package Manager UX ==== */
-
-$ux-package-title: white;
-$ux-package-button-text: white;
-$ux-package-button-install: darkslateblue;
-$ux-package-button-run: green;
-$ux-package-button-update: gold;
-$ux-package-banner-bg: rgba(255, 255, 255, 6%);
-$ux-package-description-txt: white;
-$ux-package-entry-bg: rgba(255, 255, 255, 15%);
-
-/* ==== Bolt Manager UX ==== */
-
-$ux-boltm-list-bg: rgb(17, 16, 16);
-$ux-boltm-border: rgb(36, 36, 36);
-
-/* ==== Update Dialog ==== */
-
-$ux-update-text: white;
-$ux-update-progress-text: white;
-
-/* ==== Dialogs ==== */
-
-$ux-dialog: $ui-ban-bg;
-$ux-dialog-text: white;
-$ux-dialog-title: adjust-color($ux-dialog, $lightness: 5%);
-$ux-dialog-actions: adjust-color($ux-dialog, $lightness: -5%);
-
-/* ==== Settings ==== */
-
-$ux-uisettings-bar: adjust-color($ui-bg-color, $lightness: -5%);
-$ux-uisettings-entry-text: rgba(255, 255, 255, 50%);
-$ux-uisettings-entry-text-hover: rgb(255, 255, 255);
-$ux-uisettings-entry-text-select: black;
-$ux-uisettings-entry-bg-select: #d8dce5;
+// Toolbar.
+$hw-editor-toolbar-border: $hw-base !default;
 
 //@STITCH
-
-.ux_button {
-    border: 1px solid $ui-bg-color;
-}
