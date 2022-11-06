@@ -53,6 +53,21 @@
 	100% { transform: scale(90%); opacity: 0; filter: blur(2px); }
 }
 
+.hw-titlebar {
+  -webkit-app-region: drag;
+  #controls {
+    .control {
+      -webkit-app-region: no-drag;
+    }
+  }
+}
+
+.hw-navigationbar {
+  .entry {
+    -webkit-app-region: no-drag;
+  }
+}
+
 html, body {
     @apply flex flex-col p-0 m-0 h-full w-full text-[0.9rem];
     font-family: 'Open Sans', sans-serif;
