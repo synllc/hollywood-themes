@@ -1,0 +1,24 @@
+{
+    "id": "hollywood-light",
+    "name": "Hollywood Light",
+    "stylesheet": true,
+    "editor": "vs",
+
+    "syntaxHighlight": {
+        "comment": { "color" : "27272a" },
+        "keyword": { "color" : "15803d" },
+        "operator": { "color" : "365314" },
+        "namespace": { "color" : "134e4a" },
+        "type": { "color" : "134e4a" },
+        "typeParameter": { "color" : "134e4a" },
+        "interface": { "color" : "134e4a" },
+        "function": { "color" : "7bffa0" },
+        "member": { "color" : "134e4a" },
+        "variable": { "color" : "0c4a6e" },
+        "parameter": { "color" : "134e4a" },
+        "property": { "color" : "134e4a" },
+        "label": { "color" : "615a60" },
+        "number": { "color": "164e63" },
+        "string": { "color": "064e3b" }
+    }
+}

@@ -209,14 +209,12 @@ $hw-editor-toolbar-border: $hw-base !default;
 
 .hw-editor-tab {
     border-radius: 0;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
+    border-top: 2px solid transparent !important;
+    border-left: 2px solid transparent !important;
+    border-right: 2px solid transparent !important;
 
-    &.selected {
-        border-top-color: #EF9343;
-        border-left-color: $ux-border-color;
-        border-right-color: $ux-border-color;
+    &.select {
+        border-top-color: #EF9343 !important;
     }
 }
 

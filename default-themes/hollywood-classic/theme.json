@@ -2,7 +2,7 @@
     "id": "hollywood-classic",
     "name": "Hollywood Classic",
     "stylesheet": true,
-    "editor": "synapse-dark",
+    "editor": "vs-dark",
     "settingOverrides": {
         "squaretabs": true,
         "actionbar-direction": 0,

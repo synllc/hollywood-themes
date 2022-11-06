@@ -2,7 +2,7 @@
     "id": "hollywood-dark",
     "name": "Hollywood Dark",
     "stylesheet": true,
-    "editor": "synapse-dark",
+    "editor": "vs-dark",
 
     "syntaxHighlight": {
         "comment": { "color" : "58624d" },
