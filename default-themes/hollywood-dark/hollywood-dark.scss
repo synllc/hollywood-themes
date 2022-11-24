@@ -194,12 +194,12 @@ $hw-editor-sidebar-node-bg-active: $hw-base !default;
 
 // Action buttons.
 $hw-editor-action-bg: transparent !default;
-$hw-editor-action-icon: $hw-text !default;
+$hw-editor-action-icon: adjust-color($hw-text, $alpha: -0.3) !default;
 $hw-editor-shadow: none !default;
-$hw-editor-action-bg-hover: $hw-text !default;
+$hw-editor-action-bg-hover: transparent !default;
 $hw-editor-action-icon-hover: $hw-text !default;
 $hw-editor-shadow-hover: none !default;
-$hw-editor-action-bg-active: $hw-text !default;
+$hw-editor-action-bg-active: transparent !default;
 $hw-editor-action-icon-active: $hw-text !default;
 $hw-editor-shadow-active: none !default;
 
