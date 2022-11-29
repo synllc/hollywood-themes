@@ -548,13 +548,15 @@ $hw-editor-toolbar-border: $hw-base !default;
             color: $hw-editor-sidebar-node-icon;
         }
 
-		&:hover {
-			background: $hw-editor-sidebar-node-bg-hover;
-		}
+        .node-caption {
+            &:active {
+                background: $hw-editor-sidebar-node-bg-active;
+            }
 
-		&:active {
-			background: $hw-editor-sidebar-node-bg-active;
-		}
+            &:hover {
+                background: $hw-editor-sidebar-node-bg-hover;
+            }
+        }
 
 		.caption {
 			background: $hw-editor-sidebar-node-author;
