@@ -11,6 +11,10 @@
     input[type="range"] {
         background: transparent;
         -webkit-appearance: none;
+
+        &::-webkit-slider-thumb {
+          @apply -translate-y-1;
+        }
         
         &::-webkit-slider-runnable-track {
             -webkit-appearance: none;
