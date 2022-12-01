@@ -31,12 +31,12 @@
         "Title bar background color": 
             {
                 "description": "We recommend a dark contrasting color.", 
-                "map": { "ui-ban-bg": "title-bar" } 
+                "map": { "hw-titlebar-bg": "title-bar" } 
             },
         "Button background color": 
             { 
                 "description": "It should be lighter than the default background color.",
-                "map": { "ux-button-bg": "button-bg" } 
+                "map": { "hw-button-bg": "button-bg" } 
             }
     },
 
