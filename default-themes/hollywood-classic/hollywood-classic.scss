@@ -18,10 +18,10 @@
 
 /* -------------- Base colors --------------  */
 
-$hw-bg-deep:    #1a1818 !default;    // When you need an extra level of depth.
-$hw-bg:         #1c1917 !default;    // For vast background elements (i.e. page containers).
-$hw-base:       #292524 !default;    // For generic background elements (i.e. buttons and textboxes).
-$hw-layer1:     #44403c !default;    // For captions on dialogs and other imposed text labels.
+$hw-bg-deep:    #2e2e2e !default;    // When you need an extra level of depth.
+$hw-bg:         #2b2a2a !default;    // For vast background elements (i.e. page containers).
+$hw-base:       #333333 !default;    // For generic background elements (i.e. buttons and textboxes).
+$hw-layer1:     #333333 !default;    // For captions on dialogs and other imposed text labels.
 $hw-layer2:     #57534e !default;    // Extra shade for additional layering if needed.
 $hw-layer3:     #78716c !default;    // Extra shade for additional layering if needed.
 $hw-layer4:     #a8a29e !default;    // Extra shade for additional layering if needed.
@@ -97,10 +97,10 @@ $hw-tasks-task-failure: $hw-red !default;
 $hw-button-bg:  $hw-layer1 !default;               // Can also be a gradient if desired.
 $hw-button-text: $hw-text !default;
 $hw-button-border: none !default;                // Sets the 'border' property.
-$hw-button-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.3) !default;                // Sets the 'box-shadow' property.
-$hw-button-bg-hover: #0c4a6e !default;
+$hw-button-shadow: 0 0rem 0rem rgba(0, 0, 0, 0) !default;                // Sets the 'box-shadow' property.
+$hw-button-bg-hover: #1f435abb !default;
 $hw-button-text-hover: $hw-text !default;
-$hw-button-border-hover: 1px solid #f0f9ff !default;
+$hw-button-border-hover: 0.1px solid #abadad !default;
 $hw-button-shadow-hover: $hw-button-shadow !default;
 $hw-button-bg-active: $hw-bg !default;
 $hw-button-text-active: $hw-text-sub !default;
@@ -158,13 +158,13 @@ $hw-multimenu-button-bg-select: adjust-color($hw-layer1, $alpha: -0.5) !default;
 /* -------------- Editor colors --------------  */
 
 // Tab.
-$hw-editor-tab-bg: transparent !default;
+$hw-editor-tab-bg: #4b4b4b !default;
 $hw-editor-tab-caption: $hw-text-sub !default;
 $hw-editor-tab-icon: $hw-text-sub !default;
 $hw-editor-tab-close: $hw-text-sub !default;
 $hw-editor-tab-border: none !default;
 $hw-editor-tab-shadow: none !default;
-$hw-editor-tab-bg-select: $hw-base !default;
+$hw-editor-tab-bg-select: #646464 !default;
 $hw-editor-tab-caption-select: $hw-text !default;
 $hw-editor-tab-icon-select: $hw-text !default;
 $hw-editor-tab-close-select: $hw-text !default;
@@ -188,7 +188,8 @@ $hw-editor-sidebar-node-bg: transparent !default;
 $hw-editor-sidebar-node-text: $hw-text !default;
 $hw-editor-sidebar-node-author: $hw-text-sub !default;
 $hw-editor-sidebar-node-icon: $hw-text !default;
-$hw-editor-sidebar-node-bg-hover: $hw-layer1 !default;
+$hw-editor-sidebar-node-bg-hover: #1f435abb !default;
+$hw-editor-sidebar-node-bg-border: 0.1px solid #abadad !default;
 $hw-editor-sidebar-node-bg-active: $hw-base !default;
 
 // Action buttons.
