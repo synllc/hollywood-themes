@@ -1,0 +1,24 @@
+{
+  "inherit": true,
+  "base": "vs-dark",
+  "colors": {
+    "focusBorder": "#727072",
+    "foreground": "#fcfcfa",
+    "widget.shadow": "#19181a",
+    "selection.background": "#c1c0c026",
+    "descriptionForeground": "#939293",
+    "errorForeground": "#ff6188",
+    "textBlockQuote.background": "#403e41",
+    "textBlockQuote.border": "#403e41",
+    "textCodeBlock.background": "#403e41",
+    "textLink.activeForeground": "#fcfcfa",
+    "textLink.foreground": "#ffd866",
+    "textPreformat.foreground": "#fcfcfa",
+    "textSeparator.foreground": "#727072",
+    "editor.background": "#1c1917",
+    "editor.foreground": "#fcfcfa"
+  },
+  "rules": [
+  ],
+  "encodedTokensColors": []
+}
