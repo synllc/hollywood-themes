@@ -1,0 +1,17 @@
+{
+    "id": "nixday",
+    "name": "Nixday",
+    "stylesheet": true,
+    "editor": "custom",
+
+    "groups": {
+        "palette": ["#ffc86a", "#b2fffb", "#afffd1", "#ffa9a9", "#fab2ff", "picker"]
+    },
+    "list": {
+        "Accent color used to color elements.": { 
+            "map": {
+                "accent": "palette"
+            }
+        }
+    }
+}
