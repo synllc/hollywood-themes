@@ -4,7 +4,7 @@
     "stylesheet": true,
     "editor": "vs-dark",
     "mode": "dark",
-    "transparencyMode": "mica",
+    "transparencyMode": "acrylic",
 
     "syntaxHighlight": {
         "comment": { "color" : "58624d" },
