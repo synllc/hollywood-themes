@@ -162,6 +162,7 @@ $ux-uisettings-entry-bg-select: skyblue;
 
 @font-face {
     font-family: hazyTrip;
+    //src: url('./style/default-themes/hazy-trip/W95FA.otf');
     src: asset('W95FA.otf');
 }
 
@@ -201,7 +202,7 @@ $ux-uisettings-entry-bg-select: skyblue;
     }
 }
 
-.hw-button {
+.ux_button {
     @include control;
     border-width: 2px !important;
 
@@ -228,22 +229,34 @@ $ux-uisettings-entry-bg-select: skyblue;
 #execf_button { .iconify { color: #f44336; } }
 #savef_button { .iconify { color: #4a90e2; } }
 
-.hw-textbox{
+.ux_textbox_container {
     @include control(false, true);
     font-family: monospace;
     height: 1.2em !important;
     min-height: unset;
     padding: 0 !important;
     border-radius: 0 !important;
-    font-family: hazyTrip;
 
     input {
         margin-left: unset !important;
     }
 }
 
+.ux_textbox_label {
+    font-family: hazyTrip;
+}
 
-.hw-dropdown {
+.ux_checkbox {
+    font-family: hazyTrip;
+}
+
+.ux_checkbox_check {
+    @include control(false, true);
+    border-radius: 0;
+}
+
+.ux_dropdown_control {
+    font-family: hazyTrip;
     .selector {
         @include control(false, true);
         border-radius: 0;
@@ -258,7 +271,7 @@ $ux-uisettings-entry-bg-select: skyblue;
     font-family: hazyTrip;
 }
 
-.hw-contextmenu {
+.ux_context {
     @include control(false);
     border-radius: 0;
     padding: 0;
@@ -282,6 +295,16 @@ $ux-uisettings-entry-bg-select: skyblue;
 }
 
 #ban_logo {
+    background-image: url('assets/logo_white.svg');
+}
+
+#ban_middle {
+    margin-left: unset !important;
+    position: unset !important;
+    justify-content: unset !important;
+}
+
+#ban_logo {
     background-image: none;
     width: fit-content;
 
@@ -293,7 +316,7 @@ $ux-uisettings-entry-bg-select: skyblue;
         font-size: 1.5em;
         font-family: hazyTrip;
         font-weight: bold;
-        color: white;
+        color: $ui-tx-color;
     }
 }
 
@@ -310,7 +333,7 @@ $ux-uisettings-entry-bg-select: skyblue;
 #nav_settings-engine { @include nav-icon('./style/default-themes/hazy-trip/icons/nav-explorer.png'); }
 #nav_powertools { @include nav-icon('./style/default-themes/hazy-trip/icons/nav-tools.png'); }
 
-#hw-navigationbar {
+#nav_bar {
     position: relative;
     padding: 0.2em;
     justify-content: unset !important;
@@ -318,33 +341,33 @@ $ux-uisettings-entry-bg-select: skyblue;
     width: 100%;
     height: unset !important;
     border-bottom: 1px solid #8b8b8b;
+}
 
-    .entry {
-        @include control;
-        background-color: $ui-bg-color !important;
+.nav_entry {
+    @include control;
+    background-color: $ui-bg-color !important;
+    transition: none !important;
+    max-width: 16px !important;
+    min-width: 16px !important;
+    max-height: 16px !important;
+    min-height: 16px !important;
+    padding: 2px;
+    cursor: default !important;
+
+    .selectbar {
+        display: none;
+    }
+
+    .iconify {
+        display: none;
         transition: none !important;
-        max-width: 16px !important;
-        min-width: 16px !important;
-        max-height: 16px !important;
-        min-height: 16px !important;
-        padding: 2px;
-        cursor: default !important;
-    
-        .selectbar {
-            display: none;
-        }
-    
-        .iconify {
-            display: none;
-            transition: none !important;
-        }
-    
-        &.selected {
-            border-top-color: black !important;
-            border-left-color: black !important;
-            border-bottom-color: black !important;
-            border-right-color: black !important;
-        }
+    }
+
+    &.selected {
+        border-top-color: black !important;
+        border-left-color: black !important;
+        border-bottom-color: black !important;
+        border-right-color: black !important;
     }
 }
 

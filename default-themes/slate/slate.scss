@@ -1,6 +1,7 @@
 /*
-	HOLLYWOOD CODE EDITOR — Advanced open-source interface for execution platforms
-    Copyright (C) 2018-2021 Synapse Softworks LLC
+    HOLLYWOOD CODE EDITOR — Advanced open-source interface for execution platforms
+    Source code available at https://github.com/synllc/hw
+    Copyright (C) 2018-2022 Synapse Softworks LLC
 
     This file and program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
@@ -18,32 +19,32 @@
 
 /* -------------- Base colors --------------  */
 
-$hw-bg-deep:    #2e2e2e !default;    // When you need an extra level of depth.
-$hw-bg:         #2b2a2a !default;    // For vast background elements (i.e. page containers).
-$hw-base:       #333333 !default;    // For generic background elements (i.e. buttons and textboxes).
-$hw-layer1:     #333333 !default;    // For captions on dialogs and other imposed text labels.
-$hw-layer2:     #57534e !default;    // Extra shade for additional layering if needed.
-$hw-layer3:     #78716c !default;    // Extra shade for additional layering if needed.
-$hw-layer4:     #a8a29e !default;    // Extra shade for additional layering if needed.
+$hw-bg-deep:    #343a42 !default;    // When you need an extra level of depth.
+$hw-bg:         #303841 !default;    // For vast background elements (i.e. page containers).
+$hw-base:       #404852 !default;   // For generic background elements (i.e. buttons and textboxes).
+$hw-layer1:     #47515c !default;    // For captions on dialogs and other imposed text labels.
+$hw-layer2:     #5c6672 !default;    // Extra shade for additional layering if needed.
+$hw-layer3:     #5f6a77 !default;    // Extra shade for additional layering if needed.
+$hw-layer4:     #7f8ea1 !default;    // Extra shade for additional layering if needed.
 
-$hw-text:       #fafaf9 !default;    // Generic text color.
-$hw-text-sub:   #d6d3d1 !default;    // Text color for "less important" inline text.
+$hw-text:       #f9fbfd !default;    // Generic text color.
+$hw-text-sub:   #f9fbfd !default;    // Text color for "less important" inline text.
 
-$hw-red:        #ef4444 !default;    // Errors and dangers.
-$hw-red-dark:   #b91c1c !default;    
-$hw-yellow:     #fbbf24 !default;    // Warnings and diagnostics.
+$hw-red:        #991b1b !default;    // Errors and dangers.
+$hw-red-dark:   #7f1d1d !default;    
+$hw-yellow:     #f59e0b !default;    // Warnings and diagnostics.
 $hw-yellow-dark:#b45309 !default;    
-$hw-green:      #4ade80 !default;    // Successes and confirmations.
-$hw-green-dark: #15803d !default;    
-$hw-blue:       #38bdf8 !default;    // Notifications and messages.
-$hw-blue-dark:  #0369a1 !default;
+$hw-green:      #15803d !default;    // Successes and confirmations.
+$hw-green-dark: #14532d !default;    
+$hw-blue:       #06b6d4 !default;    // Notifications and messages.
+$hw-blue-dark:  #0284c7 !default;
 
 $hw-primary:    $hw-blue-dark !default;      // Primary accent color used everywhere in the UI.
 
 /* -------------- Main interface colors --------------  */
 
 // Title bar.
-$hw-titlebar-bg: $hw-layer1 !default;
+$hw-titlebar-bg: $hw-bg !default;
 $hw-titlebar-text: $hw-text !default;
 $hw-titlebar-control: $hw-text !default;
 $hw-titlebar-control-bg: transparent !default;
@@ -51,12 +52,12 @@ $hw-titlebar-control-bg-hover: rgba(0, 0, 0,.5) !default;
 $hw-titlebar-control-bg-active: rgba(0, 0, 0,.7) !default;
 
 // Navigation bar.
-$hw-navigation-icon: $hw-text-sub !default;
+$hw-navigation-icon: #334155 !default;
 $hw-navigation-icon-shadow: none !default;       // Note: This sets the drop-shadow filter, not box-shadow.
 $hw-navigation-icon-hover: $hw-text !default;
-$hw-navigation-icon-select: white !default;
+$hw-navigation-icon-select: $hw-text !default;
 $hw-navigation-icon-accent: $hw-text !default;
-$hw-navigation-label-bg: linear-gradient(to bottom, $hw-base, $hw-bg) !default;
+$hw-navigation-label-bg: $hw-layer1;
 $hw-navigation-label-text: $hw-text !default;
 $hw-navigation-label-icon: $hw-text !default;
 $hw-navigation-label-shadow: none !default;      // Note: This sets the 'box-shadow' property.
@@ -94,13 +95,13 @@ $hw-tasks-task-failure: $hw-red !default;
 /* -------------- Control colors --------------  */
 
 // Buttons.
-$hw-button-bg:  $hw-layer1 !default;               // Can also be a gradient if desired.
+$hw-button-bg: transparent !default;             // Can also be a gradient if desired.
 $hw-button-text: $hw-text !default;
-$hw-button-border: none !default;                // Sets the 'border' property.
-$hw-button-shadow: 0 0rem 0rem rgba(0, 0, 0, 0) !default;                // Sets the 'box-shadow' property.
-$hw-button-bg-hover: #1f435abb !default;
+$hw-button-border: 1px solid $hw-text !default;                // Sets the 'border' property.
+$hw-button-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.3) !default;                // Sets the 'box-shadow' property.
+$hw-button-bg-hover: $hw-layer1 !default;
 $hw-button-text-hover: $hw-text !default;
-$hw-button-border-hover: 0.1px solid #abadad !default;
+$hw-button-border-hover: none !default;
 $hw-button-shadow-hover: $hw-button-shadow !default;
 $hw-button-bg-active: $hw-bg !default;
 $hw-button-text-active: $hw-text-sub !default;
@@ -130,8 +131,8 @@ $hw-dropdown-shadow: $hw-dialog-shadow !default;
 
 // Sliders.
 $hw-slider-bg: transparent !default;
-$hw-slider-bar: $hw-base !default;
-$hw-slider-pin: $hw-primary !default;
+$hw-slider-bar: $hw-layer2 !default;
+$hw-slider-pin: $hw-bg !default;
 $hw-slider-caption: $hw-text !default;
 
 // Context menus.
@@ -158,18 +159,18 @@ $hw-multimenu-button-bg-select: adjust-color($hw-layer1, $alpha: -0.5) !default;
 /* -------------- Editor colors --------------  */
 
 // Tab.
-$hw-editor-tab-bg: #4b4b4b !default;
+$hw-editor-tab-bg: transparent !default;
 $hw-editor-tab-caption: $hw-text-sub !default;
 $hw-editor-tab-icon: $hw-text-sub !default;
 $hw-editor-tab-close: $hw-text-sub !default;
 $hw-editor-tab-border: none !default;
 $hw-editor-tab-shadow: none !default;
-$hw-editor-tab-bg-select: #646464 !default;
+$hw-editor-tab-bg-select: $hw-base !default;
 $hw-editor-tab-caption-select: $hw-text !default;
 $hw-editor-tab-icon-select: $hw-text !default;
 $hw-editor-tab-close-select: $hw-text !default;
 $hw-editor-tab-border-select: none !default;
-$hw-editor-tab-shadow-select: 0 0rem 0.5rem rgba(0, 0, 0, 0.3) !default;
+$hw-editor-tab-shadow-select: 0 0rem 0.5rem rgba(0, 0, 0, 0.637) !default;
 $hw-editor-add-tab: $hw-text !default;
 $hw-editor-add-tab-bg: transparent !default;
 
@@ -179,7 +180,7 @@ $hw-editor-border-color: none !default;  // DOES NOT DEFINE THE BORDER PROPERTIE
 $hw-editor-shadow-color: rgb(0 0 0 / 50%) !default;  // DOES NOT DEFINE THE SHADOW PROPERTIES, only the color.
 
 // Sidebar.
-$hw-editor-sidebar-bg: $hw-base !default;
+$hw-editor-sidebar-bg: $hw-text !default;
 $hw-editor-sidebar-entry-caption-bg: $hw-base !default;
 $hw-editor-sidebar-entry-caption-icon: $hw-text !default;
 $hw-editor-sidebar-entry-caption-chevron: $hw-text !default;
@@ -188,9 +189,8 @@ $hw-editor-sidebar-node-bg: transparent !default;
 $hw-editor-sidebar-node-text: $hw-text !default;
 $hw-editor-sidebar-node-author: $hw-text-sub !default;
 $hw-editor-sidebar-node-icon: $hw-text !default;
-$hw-editor-sidebar-node-bg-hover: #1f435abb !default;
-$hw-editor-sidebar-node-bg-border: 0.1px solid #abadad !default;
-$hw-editor-sidebar-node-bg-active: $hw-base !default;
+$hw-editor-sidebar-node-bg-hover: $hw-layer1 !default;
+$hw-editor-sidebar-node-bg-active: $hw-layer1 !default;
 
 // Action buttons.
 $hw-editor-action-bg: transparent !default;
@@ -207,19 +207,6 @@ $hw-editor-shadow-active: none !default;
 $hw-editor-toolbar-border: $hw-base !default;
 
 //@STITCH
-
-.hw-editor-tab {
-    border-radius: 0;
-}
-
-.tabs-container {
-    padding: 0 !important;
-    gap: 0 !important;
-    .tabs {
-        gap: 0 !important;
-    }
-}
-
 .hw-button {
-    border-radius: 0;
+    border: 1px solid $hw-bg !important;
 }
